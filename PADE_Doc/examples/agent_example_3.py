@@ -19,7 +19,7 @@ class CompRequest(FipaRequestProtocol):
 
     def handle_request(self, message):
         super(CompRequest, self).handle_request(message)
-        display_message(self.agent.aid.localname, 'request message received')
+        display_message(self.agent.aid.localname, 'TimeAgent ---> request message received')
         now = datetime.now()
         reply = message.create_reply()
         reply.set_performative(ACLMessage.INFORM)
@@ -36,7 +36,7 @@ class CompRequest2(FipaRequestProtocol):
                                            is_initiator=True)
 
     def handle_inform(self, message):
-        display_message(self.agent.aid.localname, message.content)
+        display_message(self.agent.aid.localname, "ClockAgent --->" + message.content)
 
 
 class ComportTemporal(TimedBehaviour):

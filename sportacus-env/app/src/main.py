@@ -6,7 +6,10 @@ from pade.core.agent import Agent
 from pade.acl.aid import AID
 from sys import argv
 
-from agents import *
+from agents.agentSecretary import AgentSecretary
+from agents.agentStore import AgentStore
+from agents.agentArchaeologist import AgentArchaeologist
+from agents.agentMarketing import AgentMarketing
 
 
 def create_agents():
