@@ -35,6 +35,7 @@ lxml==4.6.3
 Mako==1.1.4
 MarkupSafe==1.1.1
 multidict==4.5.2
+nltk==3.6.2
 pagan==0.4.3
 Pillow==8.2.0
 pyasn1==0.4.7
