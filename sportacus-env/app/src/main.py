@@ -1,21 +1,36 @@
-import spade
 import time
+from spade.agent import Agent
+from spade.behaviour import OneShotBehaviour
+from spade.message import Message
+from spade.template import Template
 
-class DummyAgent(spade.agent.Agent):
-    
-    async def setup(self):
-        print("Hello World! I'm agent {}".format(str(self.jid)))
+from agents.agentSecretary import SecretaryAgent
+from agents.agentStore import StoreAgent
 
+XMPP_SERVER = "arcipelago.ml"
+
+SECRETARY = "secretarydasi" + "@" + XMPP_SERVER
+STORE = "storedasi" + "@" + XMPP_SERVER
+INDIANA = "indianadasi" + "@" + XMPP_SERVER
+MARKETING = "marketingdasi" + "@" + XMPP_SERVER
+
+
+PASS = "sportacus"
 
 
 if __name__ == "__main__":
-    dummy = DummyAgent("sportacus@arcipelago.ml", "sportacus")
-    dummy.start()
+    secretaryAgent = SecretaryAgent(SECRETARY, PASS)
+    secretaryAgent.start()
+    
+    storeAgent = StoreAgent(STORE, PASS)
+    future = storeAgent.start()
+    future.result() # wait for receiver agent to be prepared.
 
-    print("Wait until user interrupts with ctrl+C")
-    while True:
+    while storeAgent.is_alive():
         try:
             time.sleep(1)
         except KeyboardInterrupt:
+            secretaryAgent.stop()
+            storeAgent.stop()
             break
-    dummy.stop()
+    print("Agents finished")
