@@ -1,8 +1,8 @@
 import time
+import json
 from spade.agent import Agent
-from spade.behaviour import OneShotBehaviour
+from spade.behaviour import PeriodicBehaviour
 from spade.message import Message
-from spade.template import Template
 
 XMPP_SERVER = "arcipelago.ml"
 
@@ -11,41 +11,48 @@ STORE = "storedasi" + "@" + XMPP_SERVER
 INDIANA = "indianadasi" + "@" + XMPP_SERVER
 MARKETING = "marketingdasi" + "@" + XMPP_SERVER
 
-
 PASS = "sportacus"
 
 class StoreAgent(Agent):
-    '''class SendMessageBehav(OneShotBehaviour):
-        async def run(self):
-            print("[StoreAgent] SendMessageBehav -> run")
-            msg = Message(to=STORE)     # Instantiate the message
-            msg.set_metadata("performative", "inform")  # Set the "inform" FIPA performative
-            msg.body = "Almacena esta nueva noticia."                    # Set the message content
-
-            await self.send(msg)
-            print("¡Mensaje enviado!")
-
-            # stop agent from behaviour
-            await self.agent.stop()'''
     
-    class RecvMessageBehav(OneShotBehaviour):
+    class RecvMessageFromSecretary(PeriodicBehaviour):
         async def run(self):
-            print("[StoreAgent] RecvMessageBehav -> run")
-
-            msg = await self.receive(timeout=10) # wait for a message for 10 seconds
+            msg = await self.receive() # wait for a message for 10 seconds
+            
             if msg:
-                print("Mensaje recibido con el siguiente contenido: {}".format(msg.body))
-                print("De acuerdo, ahora la almaceno")
-            else:
-                print("No se ha recibido ningun mensaje despues de 10 segundoss")
+                print("\n##  STORE  ##")
+                request = json.loads(msg.body)
+                
+                if request["Type"] == "ADD_NEW":
+                    print(
+                        "Tengo que almacenar esta nueva noticia.\nTitulo:", 
+                        request["Title"], "\nTexto:", request["Text"])
+                    
+                    await self.send(
+                        Message(
+                            to=SECRETARY, 
+                            body="1", 
+                            metadata={"performative": "inform"}))
+                    
+                elif request["Type"] == "SEARCH_NEW":
+                    print("Indiana, el usuario quiere noticias:", request["Search"])
+                    
+                    await self.send(
+                        Message(
+                            to=INDIANA, 
+                            body=msg.body, 
+                            metadata={"performative": "inform"}))
+                    
+                elif request["Type"] == "CLOSE":
+                    self.agent.stop()
+                    
+                print("## ------- ##")
 
             # stop agent from behaviour
-            await self.agent.stop()
+            #await self.agent.stop()'''
+            
+
 
     async def setup(self):
-        print("StoreAgent ha comenzado")
-        template = Template()
-        template.set_metadata("performative", "inform")
-        
-        #self.add_behaviour(self.SendMessageBehav())
-        self.add_behaviour(self.RecvMessageBehav(), template)
+        print("============== Store started ==============")  
+        self.add_behaviour(self.RecvMessageFromSecretary(period=1))

@@ -6,6 +6,7 @@ from spade.template import Template
 
 from agents.agentSecretary import SecretaryAgent
 from agents.agentStore import StoreAgent
+from agents.agentIndiana import IndianaAgent
 
 XMPP_SERVER = "arcipelago.ml"
 
@@ -19,18 +20,26 @@ PASS = "sportacus"
 
 
 if __name__ == "__main__":
-    secretaryAgent = SecretaryAgent(SECRETARY, PASS)
-    secretaryAgent.start()
     
+    indianaAgent = IndianaAgent(INDIANA, PASS)
+    future = indianaAgent.start()
+    future.result()
+    
+    # Store
     storeAgent = StoreAgent(STORE, PASS)
     future = storeAgent.start()
-    future.result() # wait for receiver agent to be prepared.
+    future.result()
+    
+    # Secretary
+    secretaryAgent = SecretaryAgent(SECRETARY, PASS)
+    future = secretaryAgent.start()
+    future.result()
 
-    while storeAgent.is_alive():
+    while secretaryAgent.is_alive():
         try:
             time.sleep(1)
         except KeyboardInterrupt:
             secretaryAgent.stop()
             storeAgent.stop()
+            indianaAgent.stop()
             break
-    print("Agents finished")
