@@ -20,7 +20,6 @@ class StoreAgent(Agent):
             msg = await self.receive() # wait for a message for 10 seconds
             
             if msg:
-                print("\n##  STORE  ##")
                 request = json.loads(msg.body)
                 
                 if request["Type"] == "ADD_NEW":
@@ -34,9 +33,7 @@ class StoreAgent(Agent):
                             body="1", 
                             metadata={"performative": "inform"}))
                     
-                elif request["Type"] == "SEARCH_NEW":
-                    print("Indiana, el usuario quiere noticias:", request["Search"])
-                    
+                elif request["Type"] == "SEARCH_NEW":                    
                     await self.send(
                         Message(
                             to=INDIANA, 
@@ -45,14 +42,8 @@ class StoreAgent(Agent):
                     
                 elif request["Type"] == "CLOSE":
                     self.agent.stop()
-                    
-                print("## ------- ##")
-
-            # stop agent from behaviour
-            #await self.agent.stop()'''
             
 
 
-    async def setup(self):
-        print("============== Store started ==============")  
+    async def setup(self): 
         self.add_behaviour(self.RecvMessageFromSecretary(period=1))

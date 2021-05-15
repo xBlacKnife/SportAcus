@@ -1,9 +1,13 @@
 import time
 import json
+import os
+import bcolors
+
 from spade.agent import Agent
 from spade.behaviour import FSMBehaviour, State
 from spade.message import Message
-import os
+
+
 
 XMPP_SERVER = "arcipelago.ml"
 SECRETARY = "secretarydasi" + "@" + XMPP_SERVER
@@ -85,34 +89,100 @@ class StateTwo(State):
         
         self.set_next_state(STATE_ONE)
 
-
 class StateThree(State):
     async def run(self):
         printLogo()
         print("¿Que noticias quieres ver?")
         
+        search = input("\nBuscar:\n\t")
+        
         news = {
             "Type": "SEARCH_NEW",
-            "Search": input("\nBuscar:\n\t"),
+            "Search": search
         }
+        
+        new_string = json.dumps(news)
         
         await self.send(
             Message(
                 to=STORE,
-                body=json.dumps(news),
+                body=new_string,
                 metadata={"performative": "inform"}))
+        
+        await self.send(
+            Message(
+                to=MARKETING,
+                body=new_string,
+                metadata={"performative": "inform"}))
+                
+        
         
         self.set_next_state(STATE_FOUR)
         
+
+def showSearchedNew(new):
+    if new:
+        printLogo()
+
+        print (bcolors.FAIL + bcolors.UNDERLINE +  new["new"]["Title"] + bcolors.ENDC)
+        print(new["new"]["Text"])
+        showLastNews(new["previous"])    
+    else:
+        print("No se ha encontrado ninguna noticia.")
+        
+        
+def showLastNews(news):
+    if news:  
+        print("\n")
+        print(" ------------------------------------------------------------------------------------------------- ")
+        print("|                                        Busquedas previas                                        |")
+        print(" ------------------------------------------------------------------------------------------------- ")
+        print("\n")    
+                
+        for new in news:
+            print (bcolors.FAIL + bcolors.UNDERLINE +  new["Title"] + bcolors.ENDC)
+            print(new["Text"])
+            print("\n")
+    else:
+        print("No se han podido recuperar las busquedas previas.")
+    
+    
+    
+def showRelatedNews(news):
+    if news:  
+        print("\n")
+        print(" ------------------------------------------------------------------------------------------------- ")
+        print("|                                      Noticias Relacionadas                                      |")
+        print(" ------------------------------------------------------------------------------------------------- ")
+        print("\n")    
+                
+        for new in news:
+            print (bcolors.FAIL + bcolors.UNDERLINE +  new["Title"] + bcolors.ENDC)
+            print(new["Text"])
+            print("\n")
+    else:
+        print("No se han encontrado noticias relacionadas.")
+
+        
 class StateFour(State):
     async def run(self):
+        new_searched = None
+        related = None
+        
         print("Estamos buscando las noticias ...")
-        msg = await self.receive(timeout=10) 
-        if msg:
-            printLogo()
-            print(msg.body)
-        else:
-            print("No se ha encontrado ninguna noticia")
+        
+        related_msg = await self.receive(timeout=10) 
+        if related_msg:
+            related = json.loads(related_msg.body)
+        
+        searched_msg = await self.receive(timeout=10) 
+        if searched_msg:
+            new_searched = json.loads(searched_msg.body)
+                                
+              
+        showSearchedNew(new_searched)
+        showRelatedNews(related)   
+        
             
         print("\n")
         exit = input("¿Quieres volver al inicio? (s/n)")
@@ -121,7 +191,8 @@ class StateFour(State):
         else:
             print("Hasta pronto!!!")
             await self.agent.stop()
-
+            
+            
 class SecretaryAgent(Agent):
     
     class TalkWithClientBehav(FSMBehaviour):
