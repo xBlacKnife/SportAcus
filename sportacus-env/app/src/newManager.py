@@ -1,5 +1,21 @@
 import yake
 import json
+from os import walk
+
+# El primer elemento que hemos introducido nosotros es el "512.txt"
+def saveNew(new_to_save):
+    
+    _, _, filenames = next(walk("../resources/bbc-sport/"))
+    
+    last_file = filenames[len(filenames) - 1].replace('.txt', '')
+    
+    file_name = str((int(last_file) + 1)) + '.txt'
+    # LEONOR -----> SET_NEW_FILE(file_name)
+    
+    with open("../resources/bbc-sport/" + file_name, 'w') as f:
+        f.write(new_to_save["Title"])
+        f.write("\n\n")
+        f.write(new_to_save["Text"])
 
 def getKeywords(search, importance):
     kw_extractor = yake.KeywordExtractor()
@@ -63,18 +79,19 @@ def getRelatedNews(search):
 
 
 def getLastNews(new_filename): 
-    searchList = None
+    searchListAux = None
     news_list = []
     
     f = open('../data/LastSearches.txt', "r")
-    searchList = f.readlines()
+    searchListAux = f.readlines()
     f.close()
         
-    for search in searchList:
+    for search in searchListAux:
         news_list.append(getNew(search))
         
-    searchList.pop(0)
-    searchList.append(new_filename)
+    searchListAux.pop(0)
+    searchListAux.append(new_filename)
+    searchList = [s.rstrip("\n") for s in searchListAux]
     
     f = open('../data/LastSearches.txt', "w")
     for element in searchList:

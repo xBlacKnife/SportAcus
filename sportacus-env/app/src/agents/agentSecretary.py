@@ -22,7 +22,7 @@ STATE_THREE = "STATE_THREE"
 STATE_FOUR = "STATE_FOUR"
 
 def printLogo():
-    os.system('cls')
+    #os.system('cls')
     print(" --------                                                                                 -------- ")
     print("|                                                                                                 |")
     print("|     #######   #######   #######   #######   #######     ###     #######   ##   ##   #######     |")
@@ -47,10 +47,15 @@ class StateOne(State):
         print("[1] Introducir una nueva noticia")
         print("[2] Buscar una noticia")
         print("[3] Salir")
-        print("\n")
         
         while self.task < 1 or self.task > 3:
-            self.task = int(input("Indica el numero de la accion que quieres realizar: "))
+            try:
+                self.task = int(input("\nIndica el numero de la accion que quieres realizar: "))
+            except:
+                print(
+                    bcolors.FAIL 
+                    + "Ha ocurrido un error, por favor introduce el numero de la accion de nuevo."
+                    + bcolors.ENDC)
         
         if self.task == 1:
             self.set_next_state(STATE_TWO)
@@ -78,10 +83,10 @@ class StateTwo(State):
                 body=json.dumps(news),
                 metadata={"performative": "inform"}))
         
+        print("\n")
         print("Añadiendo...")
         
-        msg = await self.receive()
-        print("\n")
+        msg = await self.receive(timeout=5)
         if msg:
             print("Tu noticia ha sido introducida con exito.")
         else:
@@ -124,7 +129,7 @@ def showSearchedNew(new):
     if new:
         printLogo()
 
-        print (bcolors.FAIL + bcolors.UNDERLINE +  new["new"]["Title"] + bcolors.ENDC)
+        print (bcolors.HEADER + bcolors.UNDERLINE +  new["new"]["Title"] + bcolors.ENDC)
         print(new["new"]["Text"])
         showLastNews(new["previous"])    
     else:
@@ -140,7 +145,7 @@ def showLastNews(news):
         print("\n")    
                 
         for new in news:
-            print (bcolors.FAIL + bcolors.UNDERLINE +  new["Title"] + bcolors.ENDC)
+            print (bcolors.HEADER + bcolors.UNDERLINE +  new["Title"] + bcolors.ENDC)
             print(new["Text"])
             print("\n")
     else:
@@ -157,7 +162,7 @@ def showRelatedNews(news):
         print("\n")    
                 
         for new in news:
-            print (bcolors.FAIL + bcolors.UNDERLINE +  new["Title"] + bcolors.ENDC)
+            print (bcolors.HEADER + bcolors.UNDERLINE +  new["Title"] + bcolors.ENDC)
             print(new["Text"])
             print("\n")
     else:

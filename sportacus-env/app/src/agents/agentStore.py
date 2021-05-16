@@ -4,6 +4,8 @@ from spade.agent import Agent
 from spade.behaviour import PeriodicBehaviour
 from spade.message import Message
 
+import newManager as nm
+
 XMPP_SERVER = "arcipelago.ml"
 
 SECRETARY = "secretarydasi" + "@" + XMPP_SERVER
@@ -13,11 +15,14 @@ MARKETING = "marketingdasi" + "@" + XMPP_SERVER
 
 PASS = "sportacus"
 
+
+        
+
 class StoreAgent(Agent):
     
     class RecvMessageFromSecretary(PeriodicBehaviour):
         async def run(self):
-            msg = await self.receive() # wait for a message for 10 seconds
+            msg = await self.receive(timeout=5) # wait for a message for 10 seconds
             
             if msg:
                 request = json.loads(msg.body)
@@ -26,6 +31,8 @@ class StoreAgent(Agent):
                     print(
                         "Tengo que almacenar esta nueva noticia.\nTitulo:", 
                         request["Title"], "\nTexto:", request["Text"])
+                    
+                    nm.saveNew(request)
                     
                     await self.send(
                         Message(
