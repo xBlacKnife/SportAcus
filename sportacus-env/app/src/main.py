@@ -15,7 +15,6 @@ from agents.agentIndiana import IndianaAgent
 from agents.agentMarketing import MarketingAgent
 
 XMPP_SERVER = "arcipelago.ml"
-
 SECRETARY = "secretarydasi" + "@" + XMPP_SERVER
 STORE = "storedasi" + "@" + XMPP_SERVER
 INDIANA = "indianadasi" + "@" + XMPP_SERVER
