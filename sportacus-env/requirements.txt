@@ -65,3 +65,4 @@ Werkzeug==1.0.1
 WTForms==2.3.3
 yarl==1.6.3
 zope.interface==5.4.0
+wordcloud==1.8.1
