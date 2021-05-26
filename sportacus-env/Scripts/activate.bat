@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=C:\Users\avr-9\Desktop\Ingenieria Informatica\DASI\Proyecto\SportAcus\sportacus-env"
+set "VIRTUAL_ENV=C:\Users\avr-9\Desktop\Ingenieria Informatica\DASI\Proyecto\test-env"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

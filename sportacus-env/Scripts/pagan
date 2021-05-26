@@ -1,4 +1,4 @@
-#!C:\Users\avr-9\Desktop\Ingenieria Informatica\DASI\Proyecto\SportAcus\sportacus-env\Scripts\python.exe
+#!C:\Users\avr-9\Desktop\Ingenieria Informatica\DASI\Proyecto\test-env\Scripts\python.exe
 """pagan command line interface"""
 
 import argparse
