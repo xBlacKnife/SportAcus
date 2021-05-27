@@ -20,7 +20,7 @@ def printLogo():
     print("|     #######   ##        #######   ##   ##     ###     ##   ##   #######   #######   #######     |")
     print("|                                                                                                 |")
     print(" --------                                                                                 -------- ")
-    print("               ¡¡¡¡Bienvenido a SportAcus, tu periodico de deportes de confianza!!!!               ")
+    print("                        Welcome to SportAcus, the best sports newspaper!!!!                        ")
     print("\n")
 
 
@@ -47,7 +47,7 @@ def showLastNews(news):
     if news:  
         print("\n")
         print(" ------------------------------------------------------------------------------------------------- ")
-        print("|                                        Busquedas previas                                        |")
+        print("|                                         Lastest Searches                                        |")
         print(" ------------------------------------------------------------------------------------------------- ")
         print("\n")    
                 
@@ -66,7 +66,7 @@ def showRelatedNews(news):
     if news:  
         print("\n")
         print(" ------------------------------------------------------------------------------------------------- ")
-        print("|                                      Noticias Relacionadas                                      |")
+        print("|                                          Related News                                           |")
         print(" ------------------------------------------------------------------------------------------------- ")
         print("\n")    
                 

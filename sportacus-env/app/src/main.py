@@ -60,7 +60,6 @@ if __name__ == "__main__":
     
     done = True
 
-
     while secretaryAgent.is_alive():
         try:
             time.sleep(1)
