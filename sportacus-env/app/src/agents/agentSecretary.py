@@ -114,7 +114,7 @@ class SecretaryAgent(Agent):
                     logic_adapters=[
                         {
                             'import_path': 'chatterbot.logic.BestMatch',
-                            'maximum_similarity_threshold': 0.80,
+                            'maximum_similarity_threshold': 0.60,
                             'default_response': self._defaultAnswer
                         }
                     ]
@@ -159,7 +159,7 @@ class SecretaryAgent(Agent):
             
             bot_response = self._defaultAnswer
             while bot_response == self._defaultAnswer:
-                print("Hello, how can I help you? :)")
+                print("Hello, can I help you? :)")
                 
                 user_input = input()
                 bot_response = str(self.agent.chatbot.get_response(user_input))
@@ -314,7 +314,7 @@ class SecretaryAgent(Agent):
             # quiere cerrar la aplicacion    
             print("\n")
             exit = input("Do you want to go back? (y/n)")
-            if exit == "s":
+            if exit == "y":
                 self.set_next_state(STATE_ONE)
             else:
                 print("See you soon!!!")

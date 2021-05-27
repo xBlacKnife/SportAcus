@@ -2,6 +2,8 @@ import yake
 import json
 from os import walk
 
+DIRNAME = "../resources/annieApp/application-resources/bbc-sport/"
+
 # El primer elemento que hemos introducido nosotros es el "512.txt"
 def saveNew(new_to_save):
     ''' Guarda la nueva noticia en un archivo de TXT nuevo.
@@ -10,7 +12,7 @@ def saveNew(new_to_save):
     # Recoge la lista de nombres de los archivos que hay localmente
     # Los nombres de los archivos estan enumerados y en un principio van
     # del 1 al 511
-    _, _, filenames = next(walk("../resources/bbc-sport/"))
+    _, _, filenames = next(walk(DIRNAME))
     
     # Coge el nombre del ultimo archivo almacenado
     last_file = filenames[len(filenames) - 1].replace('.txt', '')
@@ -19,7 +21,7 @@ def saveNew(new_to_save):
     file_name = str((int(last_file) + 1)) + '.txt'
     
     # Se escribe la noticia en dicho archivo y se almacena
-    with open("../resources/bbc-sport/" + file_name, 'w') as f:
+    with open(DIRNAME + file_name, 'w') as f:
         f.write(new_to_save["Title"])
         f.write("\n\n")
         f.write(new_to_save["Text"])
@@ -67,7 +69,7 @@ def getKeywords(search, lim):
 def getNew(filename):  
     ''' Abre el archivo que almacena la noticia y lo almacena en formato diccionario
     '''
-    with open('../resources/bbc-sport/' + filename.rstrip("\n")) as f:
+    with open(DIRNAME + filename.rstrip("\n")) as f:
         new_lines = f.readlines()
         
     new_info = {
