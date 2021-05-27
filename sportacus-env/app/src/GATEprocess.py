@@ -37,10 +37,10 @@ with GateWorker(start= True, gatehome=gateHomePath) as gw:
                         for i in range(f.start, f.end):
                             wrd += corpus[0][i]
                         
-                        if 'majorType' in f.features.names():
-                            # print(f.features['majorType'])
-                            print("Type: %s, wrd: %s " % (f.features['majorType'], wrd))
-                            print()
+                        if ('minorType' in f.features.names()):
+                            if f.features['minorType'] == 'athletics':
+                                print("Type: %s, wrd: %s " % (f.features['minorType'], wrd))
+                                print()
                             
                         if (f.type not in tokenDict): 
                             tokenDict[f.type] = {}
