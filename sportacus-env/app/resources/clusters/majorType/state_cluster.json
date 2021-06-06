@@ -1,0 +1,73 @@
+[
+    {
+        "keywords": [
+            "la",
+            "pr",
+            "ok",
+            "ca",
+            "ak"
+        ],
+        "file": [
+            "044.txt",
+            "275.txt",
+            "474.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "ca",
+            "pr",
+            "ok",
+            "la",
+            "ak"
+        ],
+        "file": [
+            "312.txt",
+            "322.txt",
+            "350.txt",
+            "407.txt",
+            "416.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "ak",
+            "pr",
+            "ok",
+            "la",
+            "ca"
+        ],
+        "file": [
+            "013.txt",
+            "021.txt",
+            "145.txt",
+            "171.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "ok",
+            "pr",
+            "la",
+            "ca",
+            "ak"
+        ],
+        "file": [
+            "093.txt",
+            "468.txt",
+            "480.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "pr",
+            "ok",
+            "la",
+            "ca",
+            "ak"
+        ],
+        "file": [
+            "089.txt"
+        ]
+    }
+]

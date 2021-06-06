@@ -1,0 +1,38 @@
+[
+    {
+        "keywords": [
+            "lakers",
+            "libertadores",
+            "cubs",
+            "copa",
+            "chicago"
+        ],
+        "file": [
+            "474.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "cubs",
+            "chicago",
+            "libertadores",
+            "lakers",
+            "copa"
+        ],
+        "file": [
+            "241.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "libertadores",
+            "copa",
+            "lakers",
+            "cubs",
+            "chicago"
+        ],
+        "file": [
+            "210.txt"
+        ]
+    }
+]

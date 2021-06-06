@@ -1,0 +1,95 @@
+[
+    {
+        "keywords": [
+            "van",
+            "du",
+            "del"
+        ],
+        "file": [
+            "004.txt",
+            "078.txt",
+            "099.txt",
+            "133.txt",
+            "168.txt",
+            "278.txt",
+            "292.txt",
+            "306.txt",
+            "310.txt",
+            "317.txt",
+            "320.txt",
+            "327.txt",
+            "331.txt",
+            "337.txt",
+            "339.txt",
+            "349.txt",
+            "395.txt",
+            "412.txt",
+            "506.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "van",
+            "du",
+            "del"
+        ],
+        "file": [
+            "009.txt",
+            "043.txt",
+            "096.txt",
+            "149.txt",
+            "152.txt",
+            "170.txt",
+            "178.txt",
+            "183.txt",
+            "198.txt",
+            "200.txt",
+            "218.txt",
+            "235.txt",
+            "242.txt",
+            "246.txt",
+            "268.txt",
+            "294.txt",
+            "325.txt",
+            "376.txt",
+            "382.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "del",
+            "van",
+            "du"
+        ],
+        "file": [
+            "185.txt",
+            "302.txt",
+            "312.txt",
+            "314.txt",
+            "322.txt",
+            "350.txt",
+            "407.txt",
+            "416.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "du",
+            "van",
+            "del"
+        ],
+        "file": [
+            "377.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "du",
+            "van",
+            "del"
+        ],
+        "file": [
+            "313.txt"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "keywords": [
+            "cooperative",
+            "sa",
+            "na"
+        ],
+        "file": [
+            "045.txt",
+            "091.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "na",
+            "sa",
+            "cooperative"
+        ],
+        "file": [
+            "430.txt",
+            "436.txt",
+            "440.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "sa",
+            "na",
+            "cooperative"
+        ],
+        "file": [
+            "190.txt",
+            "331.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "sa",
+            "na",
+            "cooperative"
+        ],
+        "file": [
+            "044.txt",
+            "205.txt"
+        ]
+    }
+]

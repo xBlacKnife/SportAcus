@@ -1,0 +1,35 @@
+[
+    {
+        "keywords": [
+            "telephone",
+            "phone",
+            "fax"
+        ],
+        "file": [
+            "245.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "phone",
+            "telephone",
+            "fax"
+        ],
+        "file": [
+            "156.txt",
+            "233.txt",
+            "298.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "fax",
+            "telephone",
+            "phone"
+        ],
+        "file": [
+            "131.txt",
+            "273.txt"
+        ]
+    }
+]

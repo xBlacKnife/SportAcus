@@ -3,6 +3,7 @@ from wordcloud import WordCloud
 from sklearn.feature_extraction.text import TfidfVectorizer
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
+from sklearn.externals import joblib
 import pandas as pd
 import glob
 import os
@@ -23,28 +24,34 @@ clustersList = []
 #         title.append(fileName)
 #     print(fileName)
 tokenFile = None
+mType = 'majorType' # 'minorType' majorType
+
 with open(tokenPath, 'r') as fileRead:
     tokenFile = json.load(fileRead)
 for f in tokenFile:
-    for mjtype in tokenFile[f]['majorType']:
+    for mjtype in tokenFile[f][mType]:
         wrdsLst = []
+        sentence = ''
         if (mjtype not in typeLst):
             typeLst[mjtype]={}
-        for wrd in tokenFile[f]['majorType'][mjtype]:
-            wrdsLst.append(wrd)  
-        typeLst[mjtype][f] = wrd
+            
+        for wrd in tokenFile[f][mType][mjtype]:
+            sentence = sentence + wrd + ' '
+            # wrdsLst.append(wrd)  
+            
+        typeLst[mjtype][f] = sentence #.split()
         
-    sentence = ' '.join(wrdsLst[-1])
-    wrdsLst[-1] = sentence 
-    
+    # sentence = ' '.join(wrdsLst[-1])
+    # wrdsLst[-1] = sentence 
+
 vectorizer = TfidfVectorizer(stop_words={'english'})
 
 for mjtype in typeLst:
     values = list(typeLst[mjtype].values())
     title = list(typeLst[mjtype].keys())
+    # values = list(set(values))
     
     X = vectorizer.fit_transform(values)
-
     # Sum_of_squared_distances = []
     # K = range(1, 50)
     # for k in K:
@@ -57,34 +64,48 @@ for mjtype in typeLst:
     # plt.title('Elbow Method For Optimal k')
     # plt.show()
 
-    true_k = 43
+    true_k = 20
     if len(values) < true_k:
         true_k = len(values)
 
-    model = KMeans(n_clusters=true_k, init='k-means++', max_iter=200, n_init=10)
+    model = KMeans(n_clusters=true_k, init='k-means++', max_iter=300, n_init=1)
     model.fit(X)
+    
+    order_centroids = model.cluster_centers_.argsort()[:, ::-1]
+    terms = vectorizer.get_feature_names()
+    # print("Top terms per cluster:")
+    # for i in range(true_k):
+    #     print("Cluster %d:" % i),
+    #     print(' %s' % len(order_centroids[i]))
+    #     print()
+
     labels=model.labels_
     wiki_cl=pd.DataFrame(list(zip(title, labels)),columns=['title','cluster'])
-    print(wiki_cl.sort_values(by=['cluster']))
+    
 
     result={'cluster':labels,'wiki':values}
-    print(len(result))
+
     result=pd.DataFrame(result)
     clustersList = []
     for k in range(0,true_k):
         s=result[result.cluster==k]
         text=s['wiki'].str.cat(sep=' ')
         text=text.lower()
+        keywords =  list(set(text.split()))
         text=' '.join([word for word in text.split()])
         # wordcloud = WordCloud(max_font_size=50, max_words=100, background_color="white").generate(text)
         # print('Cluster: {}'.format(k))
         # print('Titles')
-        titles=wiki_cl[wiki_cl.cluster==k]['title']   
-        clustersList.append(titles.to_string(index=False).split())
+        titles=wiki_cl[wiki_cl.cluster==k]['title']  
+        clustersList.append({})
+        clustersList[-1]["keywords"] = keywords
+        clustersList[-1]["files"] = titles.to_string(index=False).split()
         # print(titles.to_string(index=False))
     #    plt.figure()
     #    plt.imshow(wordcloud, interpolation="bilinear")
     #    plt.axis("off")
     #    plt.show()
-    with open('clusters/cluster_'+ mjtype +'.txt', 'w') as writeF:
+
+    joblib.dump(model, '../resources/clusters/models/' + mjtype + 'model.pkl')
+    with open('../resources/clusters/'+mType+'/cluster_'+ mjtype +'.json', 'w') as writeF:
         json.dump(clustersList, writeF, indent=4)

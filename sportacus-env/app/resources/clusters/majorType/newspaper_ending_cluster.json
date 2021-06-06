@@ -1,0 +1,73 @@
+[
+    {
+        "keywords": [
+            "times",
+            "today",
+            "standard",
+            "news",
+            "herald"
+        ],
+        "file": [
+            "008.txt",
+            "044.txt",
+            "046.txt",
+            "221.txt",
+            "345.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "today",
+            "times",
+            "standard",
+            "news",
+            "herald"
+        ],
+        "file": [
+            "288.txt",
+            "448.txt",
+            "452.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "news",
+            "today",
+            "times",
+            "standard",
+            "herald"
+        ],
+        "file": [
+            "098.txt",
+            "131.txt",
+            "206.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "herald",
+            "today",
+            "times",
+            "standard",
+            "news"
+        ],
+        "file": [
+            "031.txt",
+            "127.txt",
+            "494.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "standard",
+            "today",
+            "times",
+            "news",
+            "herald"
+        ],
+        "file": [
+            "125.txt",
+            "242.txt"
+        ]
+    }
+]

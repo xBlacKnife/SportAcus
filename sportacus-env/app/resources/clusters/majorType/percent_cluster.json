@@ -1,0 +1,33 @@
+[
+    {
+        "keywords": [
+            "percent",
+            "cent"
+        ],
+        "file": [
+            "124.txt",
+            "167.txt",
+            "211.txt",
+            "251.txt",
+            "318.txt",
+            "364.txt",
+            "368.txt",
+            "380.txt",
+            "415.txt",
+            "419.txt",
+            "439.txt",
+            "461.txt",
+            "465.txt",
+            "474.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "cent",
+            "percent"
+        ],
+        "file": [
+            "423.txt"
+        ]
+    }
+]

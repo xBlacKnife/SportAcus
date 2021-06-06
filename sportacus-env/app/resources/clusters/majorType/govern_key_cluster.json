@@ -1,0 +1,69 @@
+[
+    {
+        "keywords": [
+            "court",
+            "national",
+            "circuit",
+            "academy"
+        ],
+        "file": [
+            "023.txt",
+            "026.txt",
+            "033.txt",
+            "035.txt",
+            "048.txt",
+            "049.txt",
+            "051.txt",
+            "079.txt",
+            "080.txt",
+            "081.txt",
+            "082.txt",
+            "088.txt",
+            "089.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "circuit",
+            "national",
+            "court",
+            "academy"
+        ],
+        "file": [
+            "057.txt",
+            "062.txt",
+            "086.txt",
+            "369.txt",
+            "465.txt",
+            "495.txt",
+            "499.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "national",
+            "court",
+            "circuit",
+            "academy"
+        ],
+        "file": [
+            "014.txt",
+            "032.txt",
+            "069.txt",
+            "070.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "academy",
+            "national",
+            "court",
+            "circuit"
+        ],
+        "file": [
+            "233.txt",
+            "254.txt",
+            "383.txt"
+        ]
+    }
+]

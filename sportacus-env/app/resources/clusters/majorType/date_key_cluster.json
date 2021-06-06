@@ -1,0 +1,60 @@
+[
+    {
+        "keywords": [
+            "tomorrow",
+            "yesterday",
+            "today"
+        ],
+        "file": [
+            "098.txt",
+            "152.txt",
+            "247.txt",
+            "337.txt",
+            "472.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "today",
+            "yesterday",
+            "tomorrow"
+        ],
+        "file": [
+            "100.txt",
+            "160.txt",
+            "210.txt",
+            "290.txt",
+            "370.txt",
+            "373.txt",
+            "376.txt",
+            "448.txt",
+            "455.txt",
+            "463.txt",
+            "466.txt",
+            "469.txt",
+            "470.txt",
+            "474.txt",
+            "477.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "yesterday",
+            "tomorrow",
+            "today"
+        ],
+        "file": [
+            "171.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "yesterday",
+            "today",
+            "tomorrow"
+        ],
+        "file": [
+            "093.txt"
+        ]
+    }
+]

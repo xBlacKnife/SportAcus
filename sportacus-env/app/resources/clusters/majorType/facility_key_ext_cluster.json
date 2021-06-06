@@ -1,0 +1,48 @@
+[
+    {
+        "keywords": [
+            "park",
+            "ranch",
+            "garden",
+            "airport"
+        ],
+        "file": [
+            "040.txt",
+            "127.txt",
+            "198.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "garden",
+            "ranch",
+            "park",
+            "airport"
+        ],
+        "file": [
+            "368.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "airport",
+            "ranch",
+            "park",
+            "garden"
+        ],
+        "file": [
+            "009.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "ranch",
+            "park",
+            "garden",
+            "airport"
+        ],
+        "file": [
+            "030.txt"
+        ]
+    }
+]

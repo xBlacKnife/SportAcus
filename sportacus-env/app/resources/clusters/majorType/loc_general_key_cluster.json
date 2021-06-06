@@ -1,0 +1,59 @@
+[
+    {
+        "keywords": [
+            "city",
+            "village",
+            "state",
+            "province"
+        ],
+        "file": [
+            "072.txt",
+            "172.txt",
+            "183.txt",
+            "210.txt",
+            "447.txt",
+            "466.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "village",
+            "state",
+            "province",
+            "city"
+        ],
+        "file": [
+            "047.txt",
+            "048.txt",
+            "054.txt",
+            "079.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "state",
+            "village",
+            "province",
+            "city"
+        ],
+        "file": [
+            "250.txt",
+            "338.txt",
+            "356.txt",
+            "368.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "province",
+            "village",
+            "state",
+            "city"
+        ],
+        "file": [
+            "030.txt",
+            "317.txt",
+            "384.txt"
+        ]
+    }
+]
