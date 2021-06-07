@@ -175,6 +175,5 @@ def generate_all_models():
         save_clusters(t, numClusters, keys, labels, minorDocsNames[t], MINOR_PATH)
         pickle.dump(model, MODELS_PATH + t +'_model.pkl')
         pickle.dump(vectorizer.vocabulary_,open(WEIGHTS_PATH + t + "_feature.pkl","wb"))
-        
 
 generate_all_models()
