@@ -8,6 +8,33 @@
             "general"
         ],
         "file": [
+            "118.txt",
+            "274.txt",
+            "302.txt",
+            "307.txt",
+            "314.txt",
+            "328.txt",
+            "329.txt",
+            "330.txt",
+            "331.txt",
+            "336.txt",
+            "371.txt",
+            "377.txt",
+            "388.txt",
+            "403.txt",
+            "423.txt",
+            "500.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "captain",
+            "sergeant",
+            "private",
+            "lieutenant",
+            "general"
+        ],
+        "file": [
             "043.txt",
             "112.txt",
             "121.txt",
@@ -53,6 +80,18 @@
     {
         "keywords": [
             "captain",
+            "lieutenant",
+            "sergeant",
+            "private",
+            "general"
+        ],
+        "file": [
+            "375.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "captain",
             "sergeant",
             "private",
             "lieutenant",
@@ -85,60 +124,9 @@
             "general"
         ],
         "file": [
-            "118.txt",
-            "274.txt",
-            "302.txt",
-            "307.txt",
-            "314.txt",
-            "328.txt",
-            "329.txt",
-            "330.txt",
-            "331.txt",
-            "336.txt",
-            "371.txt",
-            "377.txt",
-            "388.txt",
-            "403.txt",
-            "423.txt",
-            "500.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "captain",
-            "sergeant",
-            "private",
-            "lieutenant",
-            "general"
-        ],
-        "file": [
             "115.txt",
             "347.txt",
             "367.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "private",
-            "sergeant",
-            "lieutenant",
-            "general",
-            "captain"
-        ],
-        "file": [
-            "202.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "sergeant",
-            "private",
-            "lieutenant",
-            "general",
-            "captain"
-        ],
-        "file": [
-            "014.txt"
         ]
     },
     {
@@ -155,14 +143,26 @@
     },
     {
         "keywords": [
-            "captain",
-            "lieutenant",
             "sergeant",
             "private",
-            "general"
+            "lieutenant",
+            "general",
+            "captain"
         ],
         "file": [
-            "375.txt"
+            "014.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "private",
+            "sergeant",
+            "lieutenant",
+            "general",
+            "captain"
+        ],
+        "file": [
+            "202.txt"
         ]
     }
 ]

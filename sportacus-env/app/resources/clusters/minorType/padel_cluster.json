@@ -9,6 +9,28 @@
             "ball"
         ],
         "file": [
+            "023.txt",
+            "043.txt",
+            "048.txt",
+            "057.txt",
+            "079.txt",
+            "081.txt",
+            "118.txt",
+            "168.txt",
+            "208.txt",
+            "316.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "sport",
+            "serve",
+            "referee",
+            "let",
+            "corner",
+            "ball"
+        ],
+        "file": [
             "026.txt",
             "033.txt",
             "035.txt",
@@ -69,20 +91,6 @@
     },
     {
         "keywords": [
-            "sport",
-            "serve",
-            "referee",
-            "let",
-            "corner",
-            "ball"
-        ],
-        "file": [
-            "112.txt",
-            "121.txt"
-        ]
-    },
-    {
-        "keywords": [
             "referee",
             "sport",
             "serve",
@@ -108,16 +116,8 @@
             "ball"
         ],
         "file": [
-            "023.txt",
-            "043.txt",
-            "048.txt",
-            "057.txt",
-            "079.txt",
-            "081.txt",
-            "118.txt",
-            "168.txt",
-            "208.txt",
-            "316.txt"
+            "112.txt",
+            "121.txt"
         ]
     },
     {
@@ -132,32 +132,6 @@
         "file": [
             "014.txt",
             "371.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "let",
-            "sport",
-            "serve",
-            "referee",
-            "corner",
-            "ball"
-        ],
-        "file": [
-            "102.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "ball",
-            "sport",
-            "serve",
-            "referee",
-            "let",
-            "corner"
-        ],
-        "file": [
-            "146.txt"
         ]
     },
     {
@@ -188,6 +162,19 @@
     },
     {
         "keywords": [
+            "ball",
+            "sport",
+            "serve",
+            "referee",
+            "let",
+            "corner"
+        ],
+        "file": [
+            "146.txt"
+        ]
+    },
+    {
+        "keywords": [
             "corner",
             "sport",
             "serve",
@@ -197,6 +184,19 @@
         ],
         "file": [
             "148.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "let",
+            "sport",
+            "serve",
+            "referee",
+            "corner",
+            "ball"
+        ],
+        "file": [
+            "102.txt"
         ]
     }
 ]

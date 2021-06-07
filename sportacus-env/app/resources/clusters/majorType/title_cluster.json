@@ -3,34 +3,18 @@
         "keywords": [
             "captain",
             "sir",
-            "lord",
-            "sergeant",
-            "reverend",
-            "private",
-            "president",
-            "mr",
-            "lieutenant",
-            "general"
-        ],
-        "file": [
-            "328.txt",
-            "329.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "captain",
-            "mr",
             "reverend",
             "private",
             "president",
             "lord",
             "general",
             "bishop",
-            "sir",
-            "sergeant"
+            "sergeant",
+            "mr",
+            "lieutenant"
         ],
         "file": [
+            "043.txt",
             "072.txt",
             "112.txt",
             "121.txt",
@@ -43,6 +27,7 @@
             "202.txt",
             "227.txt",
             "247.txt",
+            "275.txt",
             "286.txt",
             "290.txt",
             "294.txt",
@@ -59,6 +44,7 @@
             "369.txt",
             "370.txt",
             "378.txt",
+            "389.txt",
             "396.txt",
             "397.txt",
             "398.txt",
@@ -69,13 +55,33 @@
             "415.txt",
             "418.txt",
             "431.txt",
-            "432.txt",
-            "438.txt",
             "449.txt",
             "461.txt",
             "469.txt",
             "470.txt",
             "491.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "captain",
+            "lieutenant",
+            "sir",
+            "sergeant",
+            "reverend",
+            "private",
+            "president",
+            "mr",
+            "lord",
+            "general",
+            "bishop"
+        ],
+        "file": [
+            "291.txt",
+            "342.txt",
+            "347.txt",
+            "348.txt",
+            "375.txt"
         ]
     },
     {
@@ -89,7 +95,8 @@
             "lord",
             "lieutenant",
             "general",
-            "captain"
+            "captain",
+            "bishop"
         ],
         "file": [
             "095.txt",
@@ -136,7 +143,8 @@
             "lord",
             "lieutenant",
             "general",
-            "captain"
+            "captain",
+            "bishop"
         ],
         "file": [
             "049.txt",
@@ -156,7 +164,39 @@
             "mr",
             "lord",
             "lieutenant",
-            "general"
+            "general",
+            "bishop"
+        ],
+        "file": [
+            "118.txt",
+            "274.txt",
+            "302.txt",
+            "307.txt",
+            "314.txt",
+            "330.txt",
+            "331.txt",
+            "336.txt",
+            "371.txt",
+            "377.txt",
+            "388.txt",
+            "403.txt",
+            "423.txt",
+            "500.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "captain",
+            "sir",
+            "sergeant",
+            "reverend",
+            "private",
+            "president",
+            "mr",
+            "lord",
+            "lieutenant",
+            "general",
+            "bishop"
         ],
         "file": [
             "373.txt"
@@ -165,21 +205,20 @@
     {
         "keywords": [
             "captain",
-            "lieutenant",
             "sir",
+            "lord",
             "sergeant",
             "reverend",
             "private",
             "president",
             "mr",
-            "lord",
-            "general"
+            "lieutenant",
+            "general",
+            "bishop"
         ],
         "file": [
-            "291.txt",
-            "342.txt",
-            "348.txt",
-            "375.txt"
+            "328.txt",
+            "329.txt"
         ]
     },
     {
@@ -193,21 +232,31 @@
             "mr",
             "lord",
             "lieutenant",
-            "general"
+            "general",
+            "bishop"
         ],
         "file": [
-            "118.txt",
-            "274.txt",
-            "302.txt",
-            "307.txt",
-            "314.txt",
-            "336.txt",
-            "347.txt",
-            "371.txt",
-            "377.txt",
-            "388.txt",
-            "423.txt",
-            "500.txt"
+            "115.txt",
+            "367.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "mr",
+            "sir",
+            "sergeant",
+            "reverend",
+            "private",
+            "president",
+            "lord",
+            "lieutenant",
+            "general",
+            "captain",
+            "bishop"
+        ],
+        "file": [
+            "432.txt",
+            "438.txt"
         ]
     },
     {
@@ -221,50 +270,11 @@
             "lord",
             "lieutenant",
             "general",
-            "captain"
+            "captain",
+            "bishop"
         ],
         "file": [
             "014.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "sir",
-            "captain",
-            "sergeant",
-            "reverend",
-            "private",
-            "president",
-            "mr",
-            "lord",
-            "lieutenant",
-            "general"
-        ],
-        "file": [
-            "043.txt",
-            "275.txt",
-            "389.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "captain",
-            "sir",
-            "sergeant",
-            "reverend",
-            "private",
-            "president",
-            "mr",
-            "lord",
-            "lieutenant",
-            "general"
-        ],
-        "file": [
-            "115.txt",
-            "330.txt",
-            "331.txt",
-            "367.txt",
-            "403.txt"
         ]
     }
 ]

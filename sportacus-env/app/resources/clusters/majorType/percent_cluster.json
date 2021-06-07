@@ -1,15 +1,6 @@
 [
     {
         "keywords": [
-            "cent",
-            "percent"
-        ],
-        "file": [
-            "423.txt"
-        ]
-    },
-    {
-        "keywords": [
             "percent",
             "cent"
         ],
@@ -28,6 +19,15 @@
             "461.txt",
             "465.txt",
             "474.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "cent",
+            "percent"
+        ],
+        "file": [
+            "423.txt"
         ]
     }
 ]

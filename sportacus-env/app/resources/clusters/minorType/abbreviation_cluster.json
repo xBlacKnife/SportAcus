@@ -1,47 +1,6 @@
 [
     {
         "keywords": [
-            "ok",
-            "pr",
-            "la",
-            "ca",
-            "ak"
-        ],
-        "file": [
-            "093.txt",
-            "468.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "ak",
-            "pr",
-            "ok",
-            "la",
-            "ca"
-        ],
-        "file": [
-            "013.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "ca",
-            "pr",
-            "ok",
-            "la",
-            "ak"
-        ],
-        "file": [
-            "312.txt",
-            "322.txt",
-            "350.txt",
-            "407.txt",
-            "416.txt"
-        ]
-    },
-    {
-        "keywords": [
             "la",
             "pr",
             "ok",
@@ -68,6 +27,35 @@
     },
     {
         "keywords": [
+            "ok",
+            "pr",
+            "la",
+            "ca",
+            "ak"
+        ],
+        "file": [
+            "093.txt",
+            "468.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "ca",
+            "pr",
+            "ok",
+            "la",
+            "ak"
+        ],
+        "file": [
+            "312.txt",
+            "322.txt",
+            "350.txt",
+            "407.txt",
+            "416.txt"
+        ]
+    },
+    {
+        "keywords": [
             "ak",
             "pr",
             "ok",
@@ -77,6 +65,18 @@
         "file": [
             "145.txt",
             "171.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "ak",
+            "pr",
+            "ok",
+            "la",
+            "ca"
+        ],
+        "file": [
+            "013.txt"
         ]
     },
     {

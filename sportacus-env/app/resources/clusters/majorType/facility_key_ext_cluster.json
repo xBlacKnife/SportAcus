@@ -14,13 +14,13 @@
     },
     {
         "keywords": [
-            "airport",
             "ranch",
             "park",
-            "garden"
+            "garden",
+            "airport"
         ],
         "file": [
-            "009.txt"
+            "030.txt"
         ]
     },
     {
@@ -36,13 +36,13 @@
     },
     {
         "keywords": [
+            "airport",
             "ranch",
             "park",
-            "garden",
-            "airport"
+            "garden"
         ],
         "file": [
-            "030.txt"
+            "009.txt"
         ]
     }
 ]

@@ -1,61 +1,21 @@
 [
     {
         "keywords": [
-            "marshall",
             "wright",
             "arthur",
             "charles",
             "weston",
             "thomas",
+            "marshall",
             "george",
             "ellis"
         ],
         "file": [
             "043.txt",
             "095.txt",
-            "108.txt",
-            "146.txt",
             "153.txt",
             "191.txt",
-            "244.txt",
-            "382.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "thomas",
-            "george",
-            "charles",
-            "wright",
-            "weston",
-            "marshall",
-            "ellis",
-            "arthur"
-        ],
-        "file": [
-            "320.txt",
-            "331.txt",
-            "333.txt",
-            "371.txt",
-            "395.txt",
-            "396.txt",
-            "401.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "wright",
-            "weston",
-            "thomas",
-            "marshall",
-            "george",
-            "ellis",
-            "charles",
-            "arthur"
-        ],
-        "file": [
-            "139.txt",
-            "254.txt"
+            "244.txt"
         ]
     },
     {
@@ -76,30 +36,6 @@
             "312.txt",
             "348.txt",
             "416.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "ellis",
-            "wright",
-            "weston",
-            "thomas",
-            "marshall",
-            "george",
-            "charles",
-            "arthur"
-        ],
-        "file": [
-            "264.txt",
-            "323.txt",
-            "334.txt",
-            "342.txt",
-            "347.txt",
-            "351.txt",
-            "356.txt",
-            "376.txt",
-            "405.txt",
-            "414.txt"
         ]
     },
     {
@@ -151,6 +87,31 @@
     },
     {
         "keywords": [
+            "ellis",
+            "george",
+            "wright",
+            "weston",
+            "thomas",
+            "marshall",
+            "charles",
+            "arthur"
+        ],
+        "file": [
+            "264.txt",
+            "323.txt",
+            "334.txt",
+            "342.txt",
+            "347.txt",
+            "351.txt",
+            "356.txt",
+            "376.txt",
+            "383.txt",
+            "405.txt",
+            "414.txt"
+        ]
+    },
+    {
+        "keywords": [
             "george",
             "wright",
             "weston",
@@ -166,6 +127,44 @@
             "328.txt",
             "329.txt",
             "402.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "marshall",
+            "wright",
+            "weston",
+            "thomas",
+            "george",
+            "ellis",
+            "charles",
+            "arthur"
+        ],
+        "file": [
+            "108.txt",
+            "146.txt",
+            "382.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "thomas",
+            "george",
+            "charles",
+            "wright",
+            "weston",
+            "marshall",
+            "ellis",
+            "arthur"
+        ],
+        "file": [
+            "320.txt",
+            "331.txt",
+            "333.txt",
+            "371.txt",
+            "395.txt",
+            "396.txt",
+            "401.txt"
         ]
     },
     {
@@ -186,17 +185,18 @@
     },
     {
         "keywords": [
-            "ellis",
-            "george",
             "wright",
             "weston",
             "thomas",
             "marshall",
+            "george",
+            "ellis",
             "charles",
             "arthur"
         ],
         "file": [
-            "383.txt"
+            "139.txt",
+            "254.txt"
         ]
     }
 ]

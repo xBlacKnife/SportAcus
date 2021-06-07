@@ -1,15 +1,15 @@
 [
     {
         "keywords": [
-            "government",
+            "csa",
             "unicef",
             "police",
             "parliament",
-            "csa",
+            "government",
             "army"
         ],
         "file": [
-            "043.txt"
+            "035.txt"
         ]
     },
     {
@@ -55,15 +55,15 @@
     },
     {
         "keywords": [
-            "csa",
+            "government",
             "unicef",
             "police",
             "parliament",
-            "government",
+            "csa",
             "army"
         ],
         "file": [
-            "035.txt"
+            "043.txt"
         ]
     },
     {

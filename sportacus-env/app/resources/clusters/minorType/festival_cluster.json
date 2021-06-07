@@ -8,24 +8,6 @@
             "boxing"
         ],
         "file": [
-            "027.txt",
-            "028.txt",
-            "031.txt",
-            "057.txt",
-            "090.txt",
-            "242.txt",
-            "362.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "year",
-            "new",
-            "day",
-            "christmas",
-            "boxing"
-        ],
-        "file": [
             "043.txt",
             "044.txt",
             "085.txt",
@@ -41,6 +23,24 @@
             "371.txt",
             "372.txt",
             "386.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "year",
+            "new",
+            "day",
+            "christmas",
+            "boxing"
+        ],
+        "file": [
+            "027.txt",
+            "028.txt",
+            "031.txt",
+            "057.txt",
+            "090.txt",
+            "242.txt",
+            "362.txt"
         ]
     },
     {

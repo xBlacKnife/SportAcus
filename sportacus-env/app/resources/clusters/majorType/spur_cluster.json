@@ -5,6 +5,15 @@
             "challenger"
         ],
         "file": [
+            "068.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "olympics",
+            "challenger"
+        ],
+        "file": [
             "017.txt",
             "043.txt",
             "047.txt",
@@ -56,15 +65,6 @@
             "072.txt",
             "092.txt",
             "094.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "olympics",
-            "challenger"
-        ],
-        "file": [
-            "068.txt"
         ]
     }
 ]

@@ -10,7 +10,8 @@
             "matin",
             "mail",
             "le",
-            "herald"
+            "herald",
+            "daily"
         ],
         "file": [
             "125.txt",
@@ -19,20 +20,20 @@
     },
     {
         "keywords": [
-            "mail",
+            "telegraph",
             "daily",
             "today",
             "times",
-            "telegraph",
             "star",
             "standard",
             "news",
             "matin",
-            "le"
+            "mail",
+            "le",
+            "herald"
         ],
         "file": [
-            "227.txt",
-            "298.txt"
+            "389.txt"
         ]
     },
     {
@@ -46,7 +47,8 @@
             "matin",
             "mail",
             "le",
-            "herald"
+            "herald",
+            "daily"
         ],
         "file": [
             "008.txt",
@@ -67,7 +69,8 @@
             "standard",
             "news",
             "matin",
-            "le"
+            "le",
+            "herald"
         ],
         "file": [
             "346.txt"
@@ -84,12 +87,52 @@
             "matin",
             "mail",
             "le",
-            "herald"
+            "herald",
+            "daily"
         ],
         "file": [
             "288.txt",
             "448.txt",
             "452.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "news",
+            "today",
+            "times",
+            "telegraph",
+            "star",
+            "standard",
+            "matin",
+            "mail",
+            "le",
+            "herald",
+            "daily"
+        ],
+        "file": [
+            "098.txt",
+            "131.txt",
+            "206.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "mail",
+            "daily",
+            "today",
+            "times",
+            "telegraph",
+            "star",
+            "standard",
+            "news",
+            "matin",
+            "le",
+            "herald"
+        ],
+        "file": [
+            "227.txt",
+            "298.txt"
         ]
     },
     {
@@ -103,7 +146,8 @@
             "news",
             "matin",
             "mail",
-            "le"
+            "le",
+            "daily"
         ],
         "file": [
             "031.txt",
@@ -122,7 +166,8 @@
             "standard",
             "news",
             "mail",
-            "herald"
+            "herald",
+            "daily"
         ],
         "file": [
             "454.txt"
@@ -130,52 +175,17 @@
     },
     {
         "keywords": [
-            "telegraph",
+            "star",
             "daily",
             "today",
             "times",
-            "star",
-            "standard",
-            "news",
-            "matin",
-            "mail",
-            "le"
-        ],
-        "file": [
-            "389.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "news",
-            "today",
-            "times",
             "telegraph",
-            "star",
             "standard",
+            "news",
             "matin",
             "mail",
             "le",
             "herald"
-        ],
-        "file": [
-            "098.txt",
-            "131.txt",
-            "206.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "star",
-            "daily",
-            "today",
-            "times",
-            "telegraph",
-            "standard",
-            "news",
-            "matin",
-            "mail",
-            "le"
         ],
         "file": [
             "167.txt"

@@ -1,15 +1,39 @@
 [
     {
         "keywords": [
-            "john",
-            "morris",
-            "crawford",
-            "noel",
+            "bruce",
             "howard",
             "william",
+            "noel",
+            "morris",
+            "john",
             "george",
             "geoffrey",
             "felix",
+            "crawford"
+        ],
+        "file": [
+            "095.txt",
+            "099.txt",
+            "192.txt",
+            "264.txt",
+            "265.txt",
+            "268.txt",
+            "273.txt",
+            "295.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "john",
+            "howard",
+            "noel",
+            "george",
+            "william",
+            "morris",
+            "geoffrey",
+            "felix",
+            "crawford",
             "bruce"
         ],
         "file": [
@@ -19,10 +43,10 @@
             "123.txt",
             "124.txt",
             "129.txt",
-            "131.txt",
+            "146.txt",
             "147.txt",
+            "179.txt",
             "193.txt",
-            "214.txt",
             "254.txt",
             "267.txt",
             "280.txt",
@@ -34,19 +58,37 @@
             "311.txt",
             "322.txt",
             "325.txt",
+            "331.txt",
             "333.txt",
             "349.txt",
             "350.txt",
-            "362.txt",
             "364.txt",
             "374.txt",
-            "376.txt",
             "377.txt",
             "403.txt",
             "407.txt",
             "464.txt",
             "493.txt",
             "494.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "john",
+            "geoffrey",
+            "william",
+            "noel",
+            "morris",
+            "howard",
+            "george",
+            "felix",
+            "crawford",
+            "bruce"
+        ],
+        "file": [
+            "115.txt",
+            "359.txt",
+            "371.txt"
         ]
     },
     {
@@ -69,6 +111,23 @@
     {
         "keywords": [
             "crawford",
+            "william",
+            "noel",
+            "morris",
+            "john",
+            "howard",
+            "george",
+            "geoffrey",
+            "felix",
+            "bruce"
+        ],
+        "file": [
+            "131.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "crawford",
             "noel",
             "william",
             "morris",
@@ -85,41 +144,20 @@
     },
     {
         "keywords": [
-            "john",
+            "felix",
             "william",
             "noel",
             "morris",
+            "john",
             "howard",
             "george",
             "geoffrey",
-            "felix",
             "crawford",
             "bruce"
         ],
         "file": [
-            "115.txt",
-            "359.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "bruce",
-            "william",
-            "noel",
-            "morris",
-            "john",
-            "howard",
-            "george",
-            "geoffrey",
-            "felix",
-            "crawford"
-        ],
-        "file": [
-            "192.txt",
-            "264.txt",
-            "265.txt",
-            "273.txt",
-            "295.txt"
+            "157.txt",
+            "429.txt"
         ]
     },
     {
@@ -173,11 +211,11 @@
     },
     {
         "keywords": [
-            "howard",
+            "morris",
             "william",
             "noel",
-            "morris",
             "john",
+            "howard",
             "george",
             "geoffrey",
             "felix",
@@ -185,47 +223,9 @@
             "bruce"
         ],
         "file": [
-            "095.txt",
-            "099.txt",
-            "268.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "felix",
-            "william",
-            "noel",
-            "morris",
-            "john",
-            "howard",
-            "george",
-            "geoffrey",
-            "crawford",
-            "bruce"
-        ],
-        "file": [
-            "157.txt",
-            "429.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "john",
-            "howard",
-            "george",
-            "geoffrey",
-            "william",
-            "noel",
-            "morris",
-            "felix",
-            "crawford",
-            "bruce"
-        ],
-        "file": [
-            "146.txt",
-            "179.txt",
-            "331.txt",
-            "371.txt"
+            "214.txt",
+            "362.txt",
+            "376.txt"
         ]
     }
 ]

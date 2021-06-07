@@ -1,6 +1,20 @@
 [
     {
         "keywords": [
+            "state",
+            "village",
+            "province",
+            "city"
+        ],
+        "file": [
+            "250.txt",
+            "338.txt",
+            "356.txt",
+            "368.txt"
+        ]
+    },
+    {
+        "keywords": [
             "city",
             "village",
             "state",
@@ -37,20 +51,6 @@
             "048.txt",
             "054.txt",
             "079.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "state",
-            "village",
-            "province",
-            "city"
-        ],
-        "file": [
-            "250.txt",
-            "338.txt",
-            "356.txt",
-            "368.txt"
         ]
     },
     {

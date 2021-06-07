@@ -5,11 +5,10 @@
             "teams"
         ],
         "file": [
-            "014.txt",
-            "019.txt",
-            "042.txt",
-            "053.txt",
-            "058.txt"
+            "003.txt",
+            "034.txt",
+            "076.txt",
+            "078.txt"
         ]
     },
     {
@@ -87,16 +86,6 @@
             "teams"
         ],
         "file": [
-            "065.txt",
-            "075.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "race",
-            "teams"
-        ],
-        "file": [
             "009.txt",
             "030.txt",
             "060.txt",
@@ -116,8 +105,20 @@
             "160.txt",
             "331.txt",
             "352.txt",
-            "362.txt",
-            "371.txt"
+            "362.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "race",
+            "teams"
+        ],
+        "file": [
+            "014.txt",
+            "019.txt",
+            "042.txt",
+            "053.txt",
+            "058.txt"
         ]
     },
     {
@@ -141,10 +142,9 @@
             "teams"
         ],
         "file": [
-            "003.txt",
-            "034.txt",
-            "076.txt",
-            "078.txt"
+            "038.txt",
+            "065.txt",
+            "075.txt"
         ]
     },
     {
@@ -159,11 +159,11 @@
     },
     {
         "keywords": [
-            "race",
-            "teams"
+            "teams",
+            "race"
         ],
         "file": [
-            "038.txt"
+            "371.txt"
         ]
     }
 ]

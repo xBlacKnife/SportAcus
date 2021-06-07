@@ -1,24 +1,6 @@
 [
     {
         "keywords": [
-            "city",
-            "hill",
-            "islands",
-            "channel",
-            "district",
-            "wall",
-            "park",
-            "island",
-            "village",
-            "republic"
-        ],
-        "file": [
-            "068.txt",
-            "224.txt"
-        ]
-    },
-    {
-        "keywords": [
             "stadium",
             "area",
             "bay",
@@ -28,7 +10,14 @@
             "islands",
             "channel",
             "canal",
-            "beach"
+            "beach",
+            "valley",
+            "island",
+            "park",
+            "republic",
+            "county",
+            "city",
+            "hill"
         ],
         "file": [
             "044.txt",
@@ -70,10 +59,47 @@
             "canal",
             "channel",
             "city",
-            "hill"
+            "hill",
+            "district",
+            "village",
+            "island",
+            "park",
+            "stadium",
+            "valley",
+            "area"
         ],
         "file": [
             "134.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "city",
+            "islands",
+            "channel",
+            "wall",
+            "district",
+            "hill",
+            "republic",
+            "park",
+            "island",
+            "village",
+            "county",
+            "stadium",
+            "valley",
+            "canal",
+            "beach",
+            "bay",
+            "area"
+        ],
+        "file": [
+            "068.txt",
+            "139.txt",
+            "176.txt",
+            "206.txt",
+            "244.txt",
+            "250.txt",
+            "254.txt"
         ]
     },
     {
@@ -87,7 +113,69 @@
             "canal",
             "channel",
             "city",
-            "hill"
+            "hill",
+            "district",
+            "village",
+            "island",
+            "islands",
+            "republic",
+            "valley",
+            "area"
+        ],
+        "file": [
+            "371.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "republic",
+            "islands",
+            "wall",
+            "county",
+            "bay",
+            "beach",
+            "canal",
+            "channel",
+            "city",
+            "hill",
+            "district",
+            "village",
+            "island",
+            "park",
+            "stadium",
+            "valley",
+            "area"
+        ],
+        "file": [
+            "132.txt",
+            "133.txt",
+            "174.txt",
+            "191.txt",
+            "217.txt",
+            "426.txt",
+            "446.txt",
+            "501.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "park",
+            "stadium",
+            "wall",
+            "county",
+            "bay",
+            "beach",
+            "canal",
+            "channel",
+            "city",
+            "hill",
+            "district",
+            "village",
+            "island",
+            "islands",
+            "republic",
+            "valley",
+            "area"
         ],
         "file": [
             "095.txt",
@@ -102,7 +190,6 @@
     {
         "keywords": [
             "city",
-            "republic",
             "wall",
             "district",
             "bay",
@@ -110,30 +197,39 @@
             "canal",
             "channel",
             "county",
-            "hill"
+            "hill",
+            "village",
+            "island",
+            "islands",
+            "park",
+            "republic",
+            "stadium",
+            "valley",
+            "area"
         ],
         "file": [
-            "101.txt",
-            "139.txt",
-            "176.txt",
-            "206.txt",
-            "244.txt",
-            "250.txt",
-            "254.txt"
+            "101.txt"
         ]
     },
     {
         "keywords": [
             "city",
             "park",
+            "hill",
             "county",
             "island",
-            "wall",
             "bay",
             "beach",
             "canal",
             "channel",
-            "hill"
+            "wall",
+            "district",
+            "village",
+            "islands",
+            "republic",
+            "stadium",
+            "valley",
+            "area"
         ],
         "file": [
             "019.txt",
@@ -150,28 +246,12 @@
             "192.txt",
             "195.txt",
             "205.txt",
+            "224.txt",
             "229.txt",
             "240.txt",
             "265.txt",
             "272.txt",
             "273.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "park",
-            "stadium",
-            "wall",
-            "county",
-            "bay",
-            "beach",
-            "canal",
-            "channel",
-            "city",
-            "hill"
-        ],
-        "file": [
-            "371.txt"
         ]
     },
     {
@@ -185,7 +265,14 @@
             "beach",
             "canal",
             "channel",
-            "city"
+            "city",
+            "hill",
+            "district",
+            "village",
+            "island",
+            "islands",
+            "valley",
+            "area"
         ],
         "file": [
             "042.txt",
@@ -223,7 +310,14 @@
             "channel",
             "city",
             "county",
-            "wall"
+            "wall",
+            "village",
+            "island",
+            "islands",
+            "park",
+            "republic",
+            "valley",
+            "area"
         ],
         "file": [
             "196.txt",
@@ -238,30 +332,6 @@
             "387.txt",
             "394.txt",
             "403.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "republic",
-            "islands",
-            "wall",
-            "county",
-            "bay",
-            "beach",
-            "canal",
-            "channel",
-            "city",
-            "hill"
-        ],
-        "file": [
-            "132.txt",
-            "133.txt",
-            "174.txt",
-            "191.txt",
-            "217.txt",
-            "426.txt",
-            "446.txt",
-            "501.txt"
         ]
     }
 ]

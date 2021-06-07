@@ -11,7 +11,7 @@ WEIGHTS_PATH = '../resources/clusters/weights/'
 MAJOR_PATH = '../resources/clusters/majorType/'
 MINOR_PATH = '../resources/clusters/minorType/'
 
-def do_kmeans(documents, vectorizer, numClusters = 10, numKeywords = 10):
+def do_kmeans(documents, vectorizer, numClusters = 10, numKeywords = 30):
     print('Docs Len: %s' % len(documents))
     X = vectorizer.fit_transform(documents)   
     

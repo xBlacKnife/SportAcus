@@ -1,21 +1,41 @@
 [
     {
         "keywords": [
+            "park",
             "stadium",
             "wall",
+            "trail",
+            "street",
+            "school",
+            "palace",
+            "jail",
             "hall",
+            "centre",
+            "camp"
+        ],
+        "file": [
+            "095.txt",
+            "123.txt",
+            "180.txt",
+            "186.txt",
+            "189.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "stadium",
+            "hall",
+            "centre",
             "trail",
             "street",
             "jail",
+            "wall",
             "school",
             "park",
             "palace",
-            "centre"
+            "camp"
         ],
         "file": [
-            "058.txt",
-            "068.txt",
-            "070.txt",
             "093.txt",
             "128.txt",
             "129.txt",
@@ -26,6 +46,7 @@
             "294.txt",
             "313.txt",
             "330.txt",
+            "341.txt",
             "355.txt",
             "376.txt",
             "377.txt",
@@ -36,7 +57,8 @@
             "466.txt",
             "469.txt",
             "470.txt",
-            "472.txt"
+            "472.txt",
+            "474.txt"
         ]
     },
     {
@@ -50,7 +72,8 @@
             "school",
             "jail",
             "hall",
-            "centre"
+            "centre",
+            "camp"
         ],
         "file": [
             "371.txt"
@@ -67,7 +90,8 @@
             "palace",
             "jail",
             "hall",
-            "centre"
+            "centre",
+            "camp"
         ],
         "file": [
             "040.txt",
@@ -110,10 +134,32 @@
             "school",
             "jail",
             "hall",
-            "centre"
+            "centre",
+            "camp"
         ],
         "file": [
             "148.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "school",
+            "wall",
+            "trail",
+            "street",
+            "stadium",
+            "park",
+            "palace",
+            "jail",
+            "hall",
+            "centre",
+            "camp"
+        ],
+        "file": [
+            "160.txt",
+            "212.txt",
+            "275.txt",
+            "379.txt"
         ]
     },
     {
@@ -127,7 +173,8 @@
             "park",
             "palace",
             "jail",
-            "hall"
+            "hall",
+            "centre"
         ],
         "file": [
             "103.txt",
@@ -141,42 +188,19 @@
     {
         "keywords": [
             "park",
-            "stadium",
-            "wall",
-            "trail",
-            "street",
-            "school",
-            "palace",
-            "jail",
-            "hall",
-            "centre"
-        ],
-        "file": [
-            "095.txt",
-            "123.txt",
-            "180.txt",
-            "186.txt",
-            "189.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "school",
             "wall",
             "trail",
             "street",
             "stadium",
-            "park",
+            "school",
             "palace",
             "jail",
             "hall",
-            "centre"
+            "centre",
+            "camp"
         ],
         "file": [
-            "160.txt",
-            "212.txt",
-            "275.txt",
-            "379.txt"
+            "179.txt"
         ]
     },
     {
@@ -190,7 +214,8 @@
             "school",
             "jail",
             "hall",
-            "centre"
+            "centre",
+            "camp"
         ],
         "file": [
             "072.txt",
@@ -200,37 +225,22 @@
     },
     {
         "keywords": [
-            "centre",
             "wall",
             "trail",
             "street",
             "stadium",
             "school",
             "park",
-            "palace",
-            "jail",
-            "hall"
-        ],
-        "file": [
-            "341.txt",
-            "474.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "park",
-            "wall",
-            "trail",
-            "street",
-            "stadium",
-            "school",
             "palace",
             "jail",
             "hall",
-            "centre"
+            "centre",
+            "camp"
         ],
         "file": [
-            "179.txt"
+            "058.txt",
+            "068.txt",
+            "070.txt"
         ]
     }
 ]

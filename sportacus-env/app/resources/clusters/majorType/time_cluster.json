@@ -457,6 +457,19 @@
     },
     {
         "keywords": [
+            "midnight",
+            "seven",
+            "gmt",
+            "dawn"
+        ],
+        "file": [
+            "033.txt",
+            "050.txt",
+            "189.txt"
+        ]
+    },
+    {
+        "keywords": [
             "seven",
             "midnight",
             "gmt",
@@ -467,19 +480,6 @@
             "058.txt",
             "166.txt",
             "361.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "midnight",
-            "seven",
-            "gmt",
-            "dawn"
-        ],
-        "file": [
-            "033.txt",
-            "050.txt",
-            "189.txt"
         ]
     },
     {

@@ -6,26 +6,10 @@
             "del"
         ],
         "file": [
-            "009.txt",
-            "149.txt",
-            "170.txt",
-            "183.txt",
-            "198.txt",
-            "200.txt",
-            "218.txt",
-            "242.txt",
-            "325.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "van",
-            "du",
-            "del"
-        ],
-        "file": [
-            "268.txt",
-            "294.txt"
+            "043.txt",
+            "152.txt",
+            "246.txt",
+            "382.txt"
         ]
     },
     {
@@ -80,6 +64,17 @@
             "del"
         ],
         "file": [
+            "268.txt",
+            "294.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "van",
+            "du",
+            "del"
+        ],
+        "file": [
             "377.txt"
         ]
     },
@@ -90,10 +85,15 @@
             "del"
         ],
         "file": [
-            "043.txt",
-            "152.txt",
-            "246.txt",
-            "382.txt"
+            "009.txt",
+            "149.txt",
+            "170.txt",
+            "183.txt",
+            "198.txt",
+            "200.txt",
+            "218.txt",
+            "242.txt",
+            "325.txt"
         ]
     },
     {
@@ -110,22 +110,22 @@
     },
     {
         "keywords": [
-            "van",
-            "du",
-            "del"
-        ],
-        "file": [
-            "096.txt"
-        ]
-    },
-    {
-        "keywords": [
             "du",
             "van",
             "del"
         ],
         "file": [
             "313.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "van",
+            "du",
+            "del"
+        ],
+        "file": [
+            "096.txt"
         ]
     }
 ]

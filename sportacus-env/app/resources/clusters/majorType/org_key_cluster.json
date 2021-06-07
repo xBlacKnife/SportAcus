@@ -10,25 +10,92 @@
             "radio",
             "press",
             "marine",
-            "education"
+            "education",
+            "communications",
+            "chronicle"
         ],
         "file": [
             "081.txt",
-            "082.txt"
+            "099.txt",
+            "346.txt",
+            "448.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "radio",
+            "wanderers",
+            "tv",
+            "television",
+            "telegraph",
+            "press",
+            "marine",
+            "international",
+            "education",
+            "communications",
+            "committee",
+            "chronicle"
+        ],
+        "file": [
+            "092.txt",
+            "102.txt",
+            "124.txt",
+            "142.txt",
+            "177.txt",
+            "207.txt",
+            "248.txt",
+            "256.txt",
+            "263.txt",
+            "291.txt",
+            "320.txt",
+            "323.txt",
+            "331.txt",
+            "336.txt",
+            "342.txt",
+            "398.txt",
+            "399.txt",
+            "415.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "tv",
+            "wanderers",
+            "television",
+            "telegraph",
+            "radio",
+            "press",
+            "marine",
+            "international",
+            "education",
+            "communications",
+            "committee",
+            "chronicle"
+        ],
+        "file": [
+            "045.txt",
+            "187.txt",
+            "289.txt",
+            "351.txt",
+            "405.txt",
+            "406.txt",
+            "442.txt"
         ]
     },
     {
         "keywords": [
             "international",
-            "wanderers",
             "television",
-            "telegraph",
-            "education",
+            "wanderers",
             "tv",
+            "telegraph",
             "radio",
             "press",
             "marine",
-            "communications"
+            "education",
+            "communications",
+            "committee",
+            "chronicle"
         ],
         "file": [
             "009.txt",
@@ -43,18 +110,15 @@
             "075.txt",
             "083.txt",
             "084.txt",
-            "105.txt",
             "136.txt",
             "300.txt",
             "315.txt",
             "330.txt",
             "343.txt",
-            "362.txt",
             "369.txt",
             "371.txt",
             "372.txt",
             "382.txt",
-            "389.txt",
             "400.txt",
             "402.txt",
             "404.txt",
@@ -70,96 +134,26 @@
     },
     {
         "keywords": [
-            "radio",
-            "wanderers",
-            "tv",
-            "television",
-            "telegraph",
-            "press",
-            "marine",
             "international",
-            "education",
-            "communications"
-        ],
-        "file": [
-            "102.txt",
-            "142.txt",
-            "248.txt",
-            "415.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "tv",
-            "wanderers",
-            "television",
-            "telegraph",
-            "radio",
-            "press",
-            "marine",
-            "international",
-            "education",
-            "communications"
-        ],
-        "file": [
-            "045.txt",
-            "187.txt",
-            "283.txt",
-            "289.txt",
-            "351.txt",
-            "405.txt",
-            "406.txt",
-            "442.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "radio",
-            "wanderers",
-            "tv",
-            "television",
-            "telegraph",
-            "press",
-            "marine",
-            "international",
-            "education",
-            "communications"
-        ],
-        "file": [
-            "092.txt",
-            "124.txt",
-            "177.txt",
-            "207.txt",
-            "256.txt",
-            "263.txt",
-            "291.txt",
-            "320.txt",
-            "323.txt",
-            "331.txt",
-            "336.txt",
-            "342.txt",
-            "398.txt",
-            "399.txt"
-        ]
-    },
-    {
-        "keywords": [
             "committee",
-            "television",
-            "marine",
             "wanderers",
             "tv",
+            "television",
             "telegraph",
             "radio",
             "press",
-            "international",
-            "education"
+            "marine",
+            "education",
+            "communications",
+            "chronicle"
         ],
         "file": [
-            "023.txt",
-            "043.txt",
-            "047.txt",
-            "048.txt"
+            "036.txt",
+            "039.txt",
+            "072.txt",
+            "080.txt",
+            "082.txt",
+            "204.txt"
         ]
     },
     {
@@ -173,7 +167,9 @@
             "radio",
             "marine",
             "international",
-            "education"
+            "education",
+            "committee",
+            "chronicle"
         ],
         "file": [
             "021.txt",
@@ -193,7 +189,9 @@
             "press",
             "marine",
             "international",
-            "education"
+            "education",
+            "communications",
+            "committee"
         ],
         "file": [
             "044.txt",
@@ -202,42 +200,64 @@
     },
     {
         "keywords": [
-            "international",
-            "wanderers",
             "tv",
+            "wanderers",
             "television",
             "telegraph",
             "radio",
             "press",
             "marine",
+            "international",
             "education",
-            "communications"
+            "communications",
+            "committee",
+            "chronicle"
         ],
         "file": [
-            "099.txt",
-            "346.txt",
-            "448.txt"
+            "283.txt"
         ]
     },
     {
         "keywords": [
-            "international",
             "committee",
+            "television",
+            "marine",
             "wanderers",
             "tv",
-            "television",
             "telegraph",
             "radio",
             "press",
-            "marine",
-            "education"
+            "international",
+            "education",
+            "communications",
+            "chronicle"
         ],
         "file": [
-            "036.txt",
-            "039.txt",
-            "072.txt",
-            "080.txt",
-            "204.txt"
+            "023.txt",
+            "043.txt",
+            "047.txt",
+            "048.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "wanderers",
+            "telegraph",
+            "education",
+            "tv",
+            "television",
+            "radio",
+            "press",
+            "marine",
+            "international",
+            "communications",
+            "committee",
+            "chronicle"
+        ],
+        "file": [
+            "105.txt",
+            "362.txt",
+            "389.txt"
         ]
     }
 ]

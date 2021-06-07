@@ -1,13 +1,11 @@
-from numpy.lib.npyio import load
 from gatenlp import Document
 from gatenlp.gateworker import GateWorker, GateWorkerAnnotator
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.externals import joblib
+from collections import Counter
+from operator import itemgetter
 import json
-import pickle
 
 # IMPORTS END----------------
 
@@ -24,26 +22,40 @@ CLUSTERS_PATH = '../resources/clusters/'
 # PATHS END ------------------
 
 
-def get_file_name(keywords, gate_path = None):
+def get_file_name(keywords, gate_path = None, numFiles = 1):
     if gate_path:
         GATE_EXE_PATH = gate_path
         
     keySet = process_wrds_gate(keywords)
-    print(keySet)
+    # print(keySet)
+    
+    estractedFiles = []
     
     for wrd in keySet:
-        # NOTA : este se añaden todos en una variable y el otra solo la union de files, ir descartando 
+        # print(wrd)
         for t in keySet[wrd]['majorType']:
             cluster = load_relevant_cluster('majorType', t)
-            find_related_files_in_cluster(cluster, wrd)
+            estractedFiles += find_related_files_in_cluster(cluster, wrd)
+        # for
         
-        # cribado más fino
         for t in keySet[wrd]['minorType']:
             cluster = load_relevant_cluster('minorType', t)
-            find_related_files_in_cluster(cluster, wrd)
-            
-    return "001.txt"
+            estractedFiles += find_related_files_in_cluster(cluster, wrd)
+            # como las pesonas y apellidos suelen ser bastante unívocos, 
+            # se da más peso a los clusters relacionados con nombres de personalidades
+            if 'sportperson' in keySet[wrd]['majorType']:
+                estractedFiles += find_related_files_in_cluster(cluster, wrd)
+            #if
+        # for
+    # for
     
+    topXFile = get_top_X_relevant_files(estractedFiles, numFiles = numFiles)
+    if numFiles == 1:
+        return topXFile[0]
+    else:
+        return topXFile
+    
+# function "get_file_name"
 
 def process_wrds_gate(keywords):
     keySentence = ' '.join(word for word in keywords) # para pasarselo a gate como frase una vez solo en lugar de múltiples envíos
@@ -59,18 +71,21 @@ def process_wrds_gate(keywords):
         for idx, doc in enumerate(corpus):
             corpus[idx] = pipeline(doc)
         # for
+        
         for idx in range(len(corpus)):
             for f in corpus[idx].annset():
                 if (f.type == 'Lookup'):
                     wrd = ""
                     for i in range(f.start, f.end):
                         wrd += corpus[0][i]
+                    # for
                     
                     if wrd in keywords and wrd not in keyCategories:
                         keyCategories[wrd]= {}
                         keyCategories[wrd]['majorType']= []
                         keyCategories[wrd]['minorType']= []
-                    # for
+                    # if
+                    
                     if ('majorType' in f.features.names()):
                         
                         if f.features['majorType'] not in keyCategories[wrd]['majorType']:
@@ -90,17 +105,26 @@ def process_wrds_gate(keywords):
         
         gw.close()  
     return keyCategories
-
+# function "process_wrds_gate"
 
 def load_relevant_cluster(mType, mmType):
     with open(CLUSTERS_PATH + mType + '/' + mmType + '_cluster.json', 'r') as readClFile:
         cluster = json.load(readClFile)
     return cluster
+# function "load_relevant_cluster"
 
 def find_related_files_in_cluster(cluster, wrd):
+    wrd = wrd.lower()
     for c in cluster:
         if wrd in c['keywords']:
-            return c['files']
+            return c['file']
     return []
+# function "find_related_files_in_cluster"
 
-get_file_name(['Wimbledon', 'Nadal', 'tennis', 'set'])
+def get_top_X_relevant_files(filesLst, numFiles = 5):
+    elemCount = Counter(filesLst)
+    sortedDict = sorted(elemCount.items(), key = itemgetter(1), reverse = True)
+    maxCount = dict(sortedDict[:min([len(sortedDict), numFiles])])
+    return list(maxCount.keys())
+
+# function "get_top_relevant_files"

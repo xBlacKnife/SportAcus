@@ -1,16 +1,16 @@
 [
     {
         "keywords": [
-            "news",
             "today",
             "times",
             "standard",
+            "news",
             "herald"
         ],
         "file": [
-            "098.txt",
-            "131.txt",
-            "206.txt"
+            "288.txt",
+            "448.txt",
+            "452.txt"
         ]
     },
     {
@@ -45,16 +45,16 @@
     },
     {
         "keywords": [
+            "news",
             "today",
             "times",
             "standard",
-            "news",
             "herald"
         ],
         "file": [
-            "288.txt",
-            "448.txt",
-            "452.txt"
+            "098.txt",
+            "131.txt",
+            "206.txt"
         ]
     },
     {

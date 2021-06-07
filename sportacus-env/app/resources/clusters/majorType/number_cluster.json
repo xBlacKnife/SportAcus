@@ -493,18 +493,6 @@
     },
     {
         "keywords": [
-            "thirty",
-            "zero",
-            "seven",
-            "million",
-            "eighty"
-        ],
-        "file": [
-            "283.txt"
-        ]
-    },
-    {
-        "keywords": [
             "eighty",
             "zero",
             "thirty",
@@ -513,6 +501,18 @@
         ],
         "file": [
             "251.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "million",
+            "zero",
+            "thirty",
+            "seven",
+            "eighty"
+        ],
+        "file": [
+            "097.txt"
         ]
     },
     {
@@ -529,14 +529,14 @@
     },
     {
         "keywords": [
-            "million",
-            "zero",
             "thirty",
+            "zero",
             "seven",
+            "million",
             "eighty"
         ],
         "file": [
-            "097.txt"
+            "283.txt"
         ]
     }
 ]

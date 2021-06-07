@@ -1,22 +1,6 @@
 [
     {
         "keywords": [
-            "circuit",
-            "national",
-            "court",
-            "academy"
-        ],
-        "file": [
-            "057.txt",
-            "062.txt",
-            "369.txt",
-            "465.txt",
-            "495.txt",
-            "499.txt"
-        ]
-    },
-    {
-        "keywords": [
             "court",
             "national",
             "circuit",
@@ -36,6 +20,22 @@
             "082.txt",
             "088.txt",
             "089.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "circuit",
+            "national",
+            "court",
+            "academy"
+        ],
+        "file": [
+            "057.txt",
+            "062.txt",
+            "369.txt",
+            "465.txt",
+            "495.txt",
+            "499.txt"
         ]
     },
     {

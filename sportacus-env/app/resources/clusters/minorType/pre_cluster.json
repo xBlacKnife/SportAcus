@@ -1,47 +1,136 @@
 [
     {
         "keywords": [
+            "north",
+            "east",
+            "southern",
             "central",
+            "camp",
+            "western",
+            "west",
+            "south",
+            "ref",
+            "puerto",
+            "porto",
             "northern",
             "mount",
+            "eastern"
+        ],
+        "file": [
+            "024.txt",
+            "026.txt",
+            "035.txt",
+            "118.txt",
+            "371.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "northern",
+            "southern",
+            "ref",
             "western",
             "eastern",
             "west",
+            "south",
+            "puerto",
+            "porto",
+            "north",
+            "mount",
+            "east",
+            "central",
+            "camp"
+        ],
+        "file": [
+            "064.txt",
+            "101.txt",
+            "105.txt",
+            "166.txt",
+            "204.txt",
+            "215.txt",
+            "248.txt",
+            "298.txt",
+            "328.txt",
+            "329.txt",
+            "339.txt",
+            "346.txt",
+            "366.txt",
+            "372.txt",
+            "382.txt",
+            "401.txt",
+            "403.txt",
+            "447.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "south",
+            "north",
+            "northern",
+            "western",
+            "west",
+            "southern",
+            "ref",
+            "puerto",
+            "porto",
+            "mount",
+            "eastern",
+            "east",
+            "central",
+            "camp"
+        ],
+        "file": [
+            "331.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "west",
+            "western",
             "southern",
             "south",
             "ref",
-            "puerto"
+            "puerto",
+            "porto",
+            "northern",
+            "north",
+            "mount",
+            "eastern",
+            "east",
+            "central",
+            "camp"
         ],
         "file": [
-            "014.txt",
-            "040.txt",
-            "042.txt",
-            "064.txt",
-            "113.txt",
-            "117.txt",
-            "124.txt",
-            "204.txt",
-            "213.txt",
-            "299.txt",
-            "363.txt",
-            "372.txt",
-            "380.txt",
-            "401.txt",
-            "403.txt"
+            "030.txt",
+            "096.txt",
+            "109.txt",
+            "129.txt",
+            "184.txt",
+            "192.txt",
+            "205.txt",
+            "234.txt",
+            "273.txt",
+            "285.txt",
+            "313.txt",
+            "419.txt"
         ]
     },
     {
         "keywords": [
             "camp",
             "puerto",
+            "porto",
             "western",
             "west",
             "southern",
             "south",
             "ref",
-            "porto",
             "northern",
-            "north"
+            "north",
+            "mount",
+            "eastern",
+            "east",
+            "central"
         ],
         "file": [
             "013.txt",
@@ -49,6 +138,7 @@
             "021.txt",
             "103.txt",
             "119.txt",
+            "140.txt",
             "159.txt",
             "181.txt",
             "182.txt",
@@ -70,176 +160,126 @@
         "keywords": [
             "south",
             "north",
-            "northern",
             "western",
             "west",
             "southern",
             "ref",
             "puerto",
             "porto",
-            "mount"
+            "northern",
+            "mount",
+            "eastern",
+            "east",
+            "central",
+            "camp"
         ],
         "file": [
-            "024.txt",
-            "026.txt",
-            "035.txt",
             "126.txt",
             "210.txt",
             "233.txt",
             "278.txt",
-            "331.txt",
+            "377.txt",
             "482.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "east",
+            "western",
+            "west",
+            "southern",
+            "south",
+            "ref",
+            "puerto",
+            "porto",
+            "northern",
+            "north",
+            "mount",
+            "eastern",
+            "central",
+            "camp"
+        ],
+        "file": [
+            "034.txt",
+            "066.txt",
+            "112.txt",
+            "121.txt",
+            "179.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "central",
+            "western",
+            "west",
+            "southern",
+            "south",
+            "ref",
+            "puerto",
+            "porto",
+            "northern",
+            "north",
+            "mount",
+            "eastern",
+            "east",
+            "camp"
+        ],
+        "file": [
+            "040.txt",
+            "042.txt",
+            "113.txt",
+            "117.txt",
+            "124.txt",
+            "213.txt",
+            "299.txt",
+            "363.txt"
         ]
     },
     {
         "keywords": [
             "porto",
             "mount",
-            "camp",
             "western",
             "west",
             "southern",
             "south",
             "ref",
             "puerto",
-            "northern"
+            "northern",
+            "north",
+            "eastern",
+            "east",
+            "central",
+            "camp"
         ],
         "file": [
-            "140.txt",
+            "014.txt",
             "169.txt",
             "172.txt",
             "218.txt",
-            "237.txt"
+            "237.txt",
+            "380.txt"
         ]
     },
     {
         "keywords": [
-            "northern",
             "southern",
             "south",
+            "northern",
             "north",
             "western",
             "west",
             "ref",
             "puerto",
             "porto",
-            "mount"
-        ],
-        "file": [
-            "328.txt",
-            "329.txt",
-            "339.txt",
-            "402.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "west",
-            "western",
-            "southern",
-            "south",
-            "ref",
-            "puerto",
-            "porto",
-            "northern",
-            "north",
-            "mount"
-        ],
-        "file": [
-            "030.txt",
-            "096.txt",
-            "109.txt",
-            "129.txt",
-            "184.txt",
-            "192.txt",
-            "205.txt",
-            "234.txt",
-            "273.txt",
-            "285.txt",
-            "313.txt",
-            "419.txt"
-        ]
-    },
-    {
-        "keywords": [
+            "mount",
+            "eastern",
             "east",
-            "north",
-            "southern",
             "central",
-            "camp",
-            "western",
-            "west",
-            "south",
-            "ref",
-            "puerto"
+            "camp"
         ],
         "file": [
-            "034.txt",
-            "066.txt",
-            "112.txt",
-            "118.txt",
-            "121.txt",
-            "179.txt",
-            "371.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "southern",
-            "northern",
-            "western",
-            "west",
-            "south",
-            "ref",
-            "puerto",
-            "porto",
-            "north",
-            "mount"
-        ],
-        "file": [
-            "215.txt",
-            "366.txt",
-            "382.txt",
-            "447.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "ref",
-            "western",
-            "west",
-            "southern",
-            "south",
-            "puerto",
-            "porto",
-            "northern",
-            "north",
-            "mount"
-        ],
-        "file": [
-            "101.txt",
-            "105.txt",
-            "166.txt",
-            "248.txt",
-            "298.txt",
-            "346.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "south",
-            "western",
-            "west",
-            "southern",
-            "ref",
-            "puerto",
-            "porto",
-            "northern",
-            "north",
-            "mount"
-        ],
-        "file": [
-            "377.txt"
+            "402.txt"
         ]
     }
 ]

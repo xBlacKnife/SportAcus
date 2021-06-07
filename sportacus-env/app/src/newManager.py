@@ -3,6 +3,7 @@ import json
 from os import walk
 
 from addNew import set_new_file
+from getNewsFiles import get_file_name
 
 DIRNAME = "../resources/annieApp/application-resources/bbc-sport/"
 GATEEXEPATH = 'D:/Programs/GateJava'
@@ -136,8 +137,7 @@ def getUserSearchNew(search):
     keywords = getKeywords(search, 0.9)
     
     # Se recoge el nombre del archivo que tiene nuestra noticia
-    # LEONOR -----> new_filename = GET_FILE_NAME(keywords)
-    new_filename = "001.txt"
+    new_filename = get_file_name(keywords)
     
     # Se crea el diccionario
     new_info = {
@@ -179,5 +179,3 @@ def getRelatedNews(search):
     return json.dumps(news_list)
 
 # function "getRelatedNews"
-
-    

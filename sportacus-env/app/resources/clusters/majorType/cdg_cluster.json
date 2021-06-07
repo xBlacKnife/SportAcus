@@ -1,23 +1,13 @@
 [
     {
         "keywords": [
+            "cooperative",
             "sa",
-            "na",
-            "cooperative"
+            "na"
         ],
         "file": [
-            "190.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "sa",
-            "na",
-            "cooperative"
-        ],
-        "file": [
-            "044.txt",
-            "205.txt"
+            "045.txt",
+            "091.txt"
         ]
     },
     {
@@ -44,13 +34,23 @@
     },
     {
         "keywords": [
-            "cooperative",
             "sa",
-            "na"
+            "na",
+            "cooperative"
         ],
         "file": [
-            "045.txt",
-            "091.txt"
+            "190.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "sa",
+            "na",
+            "cooperative"
+        ],
+        "file": [
+            "044.txt",
+            "205.txt"
         ]
     }
 ]

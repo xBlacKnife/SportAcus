@@ -35,25 +35,7 @@
             "game"
         ],
         "file": [
-            "489.txt",
-            "490.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "referee",
-            "game",
-            "serve",
-            "open",
-            "let"
-        ],
-        "file": [
-            "095.txt",
-            "247.txt",
-            "248.txt",
-            "268.txt",
-            "382.txt",
-            "404.txt"
+            "476.txt"
         ]
     },
     {
@@ -65,6 +47,20 @@
             "game"
         ],
         "file": [
+            "489.txt",
+            "490.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "open",
+            "let",
+            "serve",
+            "referee",
+            "game"
+        ],
+        "file": [
+            "102.txt",
             "422.txt",
             "423.txt",
             "424.txt",
@@ -110,18 +106,6 @@
             "game"
         ],
         "file": [
-            "495.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "open",
-            "serve",
-            "referee",
-            "let",
-            "game"
-        ],
-        "file": [
             "429.txt",
             "430.txt",
             "436.txt",
@@ -135,6 +119,34 @@
             "494.txt",
             "496.txt",
             "510.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "referee",
+            "serve",
+            "open",
+            "let",
+            "game"
+        ],
+        "file": [
+            "095.txt",
+            "248.txt",
+            "268.txt",
+            "382.txt",
+            "404.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "open",
+            "serve",
+            "referee",
+            "let",
+            "game"
+        ],
+        "file": [
+            "495.txt"
         ]
     },
     {
@@ -154,30 +166,6 @@
     },
     {
         "keywords": [
-            "open",
-            "serve",
-            "referee",
-            "let",
-            "game"
-        ],
-        "file": [
-            "476.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "let",
-            "serve",
-            "referee",
-            "open",
-            "game"
-        ],
-        "file": [
-            "102.txt"
-        ]
-    },
-    {
-        "keywords": [
             "serve",
             "referee",
             "open",
@@ -186,6 +174,18 @@
         ],
         "file": [
             "421.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "game",
+            "serve",
+            "referee",
+            "open",
+            "let"
+        ],
+        "file": [
+            "247.txt"
         ]
     }
 ]
