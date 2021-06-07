@@ -1,7 +1,6 @@
 from typing import ValuesView
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer 
 from sklearn.cluster import KMeans
-from sklearn.externals import joblib
 import pickle
 import json
 
@@ -128,7 +127,7 @@ def generate_all_models():
         numClusters = max(labels) + 1
         # print("Num Clusters: %s" % numClusters)
         save_clusters(t, numClusters, keys, labels, majorDocsFiles[t], MAJOR_PATH)
-        joblib.dump(model, MODELS_PATH + t +'_model.pkl')
+        pickle.dump(model, MODELS_PATH + t +'_model.pkl')
         
         pickle.dump(vectorizer.vocabulary_,open(WEIGHTS_PATH + t + "_feature.pkl","wb"))
         # print()
@@ -139,7 +138,7 @@ def generate_all_models():
         model, keys, labels = do_kmeans(minorDocs[t], vectorizer)
         numClusters = max(labels) + 1
         save_clusters(t, numClusters, keys, labels, minorDocsNames[t], MINOR_PATH)
-        joblib.dump(model, MODELS_PATH + t +'_model.pkl')
+        pickle.dump(model, MODELS_PATH + t +'_model.pkl')
         pickle.dump(vectorizer.vocabulary_,open(WEIGHTS_PATH + t + "_feature.pkl","wb"))
         
 

@@ -4,7 +4,6 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.externals import joblib
 import json
 import pickle
 
@@ -113,7 +112,7 @@ def generate_documents_of_type(tokensDict, mType, mmType):
 # function "generate_documents_of_type"
 
 def load_relevant_cluster(mType, mmType):
-    model = joblib.load(MODELS_CL_DIR_PATH + mmType + '_model.pkl')
+    model = pickle.load(MODELS_CL_DIR_PATH + mmType + '_model.pkl')
     with open(CLUSTERS_PATH + mType + '/' + mmType + '_cluster.json', 'r') as readClFile:
         cluster = json.load(readClFile)
         

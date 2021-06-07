@@ -179,5 +179,3 @@ def getRelatedNews(search, num_files = 7):
     return json.dumps(news_list)
 
 # function "getRelatedNews"
-
-print(getRelatedNews("Nadal tennis match at Wimbledon"))
