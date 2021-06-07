@@ -50,10 +50,15 @@ def get_file_name(keywords, gate_path = None, numFiles = 1):
     # for
     
     topXFile = get_top_X_relevant_files(estractedFiles, numFiles = numFiles)
+    if (topXFile == 0):
+        print("ERROR: No files found related to search: %s" % keywords)
+    # if
     if numFiles == 1:
         return topXFile[0]
+    # if
     else:
         return topXFile
+    # else
     
 # function "get_file_name"
 
@@ -125,6 +130,8 @@ def get_top_X_relevant_files(filesLst, numFiles = 5):
     elemCount = Counter(filesLst)
     sortedDict = sorted(elemCount.items(), key = itemgetter(1), reverse = True)
     maxCount = dict(sortedDict[:min([len(sortedDict), numFiles])])
-    return list(maxCount.keys())
-
+    if len(maxCount) > 0:
+        return list(maxCount.keys())
+    else:
+        return 0
 # function "get_top_relevant_files"
