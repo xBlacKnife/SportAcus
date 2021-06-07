@@ -1,19 +1,20 @@
 [
     {
         "keywords": [
-            "matin",
-            "le",
+            "standard",
             "today",
             "times",
             "telegraph",
             "star",
-            "standard",
             "news",
+            "matin",
             "mail",
+            "le",
             "herald"
         ],
         "file": [
-            "454.txt"
+            "125.txt",
+            "242.txt"
         ]
     },
     {
@@ -31,8 +32,7 @@
         ],
         "file": [
             "227.txt",
-            "298.txt",
-            "346.txt"
+            "298.txt"
         ]
     },
     {
@@ -58,6 +58,23 @@
     },
     {
         "keywords": [
+            "mail",
+            "daily",
+            "today",
+            "times",
+            "telegraph",
+            "star",
+            "standard",
+            "news",
+            "matin",
+            "le"
+        ],
+        "file": [
+            "346.txt"
+        ]
+    },
+    {
+        "keywords": [
             "today",
             "times",
             "telegraph",
@@ -77,24 +94,6 @@
     },
     {
         "keywords": [
-            "standard",
-            "today",
-            "times",
-            "telegraph",
-            "star",
-            "news",
-            "matin",
-            "mail",
-            "le",
-            "herald"
-        ],
-        "file": [
-            "125.txt",
-            "242.txt"
-        ]
-    },
-    {
-        "keywords": [
             "herald",
             "today",
             "times",
@@ -110,6 +109,40 @@
             "031.txt",
             "127.txt",
             "494.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "matin",
+            "le",
+            "today",
+            "times",
+            "telegraph",
+            "star",
+            "standard",
+            "news",
+            "mail",
+            "herald"
+        ],
+        "file": [
+            "454.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "telegraph",
+            "daily",
+            "today",
+            "times",
+            "star",
+            "standard",
+            "news",
+            "matin",
+            "mail",
+            "le"
+        ],
+        "file": [
+            "389.txt"
         ]
     },
     {
@@ -146,23 +179,6 @@
         ],
         "file": [
             "167.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "telegraph",
-            "daily",
-            "today",
-            "times",
-            "star",
-            "standard",
-            "news",
-            "matin",
-            "mail",
-            "le"
-        ],
-        "file": [
-            "389.txt"
         ]
     }
 ]

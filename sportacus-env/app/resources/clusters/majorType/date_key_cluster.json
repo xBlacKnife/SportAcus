@@ -1,6 +1,18 @@
 [
     {
         "keywords": [
+            "today",
+            "yesterday",
+            "tomorrow"
+        ],
+        "file": [
+            "100.txt",
+            "469.txt",
+            "470.txt"
+        ]
+    },
+    {
+        "keywords": [
             "tomorrow",
             "yesterday",
             "today"
@@ -20,7 +32,6 @@
             "tomorrow"
         ],
         "file": [
-            "100.txt",
             "160.txt",
             "210.txt",
             "290.txt",
@@ -31,8 +42,6 @@
             "455.txt",
             "463.txt",
             "466.txt",
-            "469.txt",
-            "470.txt",
             "474.txt",
             "477.txt"
         ]

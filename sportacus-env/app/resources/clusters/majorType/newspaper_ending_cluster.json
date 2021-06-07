@@ -1,6 +1,20 @@
 [
     {
         "keywords": [
+            "news",
+            "today",
+            "times",
+            "standard",
+            "herald"
+        ],
+        "file": [
+            "098.txt",
+            "131.txt",
+            "206.txt"
+        ]
+    },
+    {
+        "keywords": [
             "times",
             "today",
             "standard",
@@ -17,34 +31,6 @@
     },
     {
         "keywords": [
-            "today",
-            "times",
-            "standard",
-            "news",
-            "herald"
-        ],
-        "file": [
-            "288.txt",
-            "448.txt",
-            "452.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "news",
-            "today",
-            "times",
-            "standard",
-            "herald"
-        ],
-        "file": [
-            "098.txt",
-            "131.txt",
-            "206.txt"
-        ]
-    },
-    {
-        "keywords": [
             "herald",
             "today",
             "times",
@@ -55,6 +41,20 @@
             "031.txt",
             "127.txt",
             "494.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "today",
+            "times",
+            "standard",
+            "news",
+            "herald"
+        ],
+        "file": [
+            "288.txt",
+            "448.txt",
+            "452.txt"
         ]
     },
     {

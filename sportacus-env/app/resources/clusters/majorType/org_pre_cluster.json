@@ -1,6 +1,16 @@
 [
     {
         "keywords": [
+            "royal",
+            "national"
+        ],
+        "file": [
+            "043.txt",
+            "364.txt"
+        ]
+    },
+    {
+        "keywords": [
             "national",
             "royal"
         ],
@@ -9,16 +19,6 @@
             "032.txt",
             "069.txt",
             "070.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "royal",
-            "national"
-        ],
-        "file": [
-            "043.txt",
-            "364.txt"
         ]
     }
 ]

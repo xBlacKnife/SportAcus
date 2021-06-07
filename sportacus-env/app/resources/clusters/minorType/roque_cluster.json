@@ -4,19 +4,40 @@
             "brown"
         ],
         "file": [
-            "030.txt",
+            "123.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "brown"
+        ],
+        "file": [
             "095.txt",
-            "101.txt",
-            "113.txt",
             "119.txt",
-            "123.txt",
-            "208.txt",
             "224.txt",
             "225.txt",
             "293.txt",
-            "325.txt",
+            "325.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "brown"
+        ],
+        "file": [
+            "030.txt",
+            "208.txt",
             "383.txt",
             "384.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "brown"
+        ],
+        "file": [
+            "101.txt",
+            "113.txt"
         ]
     }
 ]

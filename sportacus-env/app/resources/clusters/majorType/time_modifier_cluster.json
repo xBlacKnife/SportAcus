@@ -1,109 +1,25 @@
 [
     {
         "keywords": [
-            "coming",
-            "previous",
-            "past",
-            "forthcoming"
-        ],
-        "file": [
-            "003.txt",
-            "036.txt",
-            "062.txt",
-            "070.txt",
-            "126.txt",
-            "142.txt",
-            "143.txt",
-            "160.txt",
-            "196.txt",
-            "199.txt",
-            "207.txt",
-            "209.txt",
-            "210.txt",
-            "217.txt",
-            "253.txt",
-            "279.txt",
-            "301.txt",
-            "304.txt",
-            "320.txt",
-            "323.txt",
-            "338.txt",
-            "353.txt",
-            "360.txt",
-            "361.txt",
-            "366.txt",
-            "368.txt",
-            "371.txt",
-            "407.txt",
-            "409.txt",
-            "414.txt",
-            "421.txt",
-            "460.txt",
-            "474.txt",
-            "483.txt",
-            "486.txt",
-            "500.txt"
-        ]
-    },
-    {
-        "keywords": [
             "past",
             "previous",
             "forthcoming",
             "coming"
         ],
         "file": [
-            "014.txt",
-            "025.txt",
             "040.txt",
-            "064.txt",
-            "072.txt",
-            "093.txt",
-            "099.txt",
-            "101.txt",
-            "105.txt",
-            "107.txt",
-            "108.txt",
-            "109.txt",
-            "112.txt",
-            "121.txt",
-            "146.txt",
-            "152.txt",
-            "158.txt",
-            "176.txt",
+            "104.txt",
             "180.txt",
             "192.txt",
-            "216.txt",
-            "240.txt",
-            "251.txt",
-            "263.txt",
-            "268.txt",
-            "278.txt",
-            "311.txt",
-            "312.txt",
-            "336.txt",
             "352.txt",
-            "383.txt",
-            "395.txt",
-            "403.txt",
-            "416.txt",
-            "423.txt",
-            "435.txt",
-            "437.txt",
-            "445.txt",
-            "449.txt",
-            "452.txt",
-            "480.txt",
-            "487.txt",
-            "495.txt",
-            "497.txt"
+            "480.txt"
         ]
     },
     {
         "keywords": [
+            "forthcoming",
             "previous",
             "past",
-            "forthcoming",
             "coming"
         ],
         "file": [
@@ -238,6 +154,7 @@
             "299.txt",
             "300.txt",
             "303.txt",
+            "307.txt",
             "310.txt",
             "313.txt",
             "315.txt",
@@ -342,6 +259,96 @@
     },
     {
         "keywords": [
+            "coming",
+            "previous",
+            "past",
+            "forthcoming"
+        ],
+        "file": [
+            "036.txt",
+            "062.txt",
+            "070.txt",
+            "124.txt",
+            "142.txt",
+            "143.txt",
+            "160.txt",
+            "196.txt",
+            "199.txt",
+            "207.txt",
+            "209.txt",
+            "210.txt",
+            "217.txt",
+            "253.txt",
+            "279.txt",
+            "281.txt",
+            "301.txt",
+            "304.txt",
+            "320.txt",
+            "323.txt",
+            "353.txt",
+            "360.txt",
+            "366.txt",
+            "368.txt",
+            "371.txt",
+            "407.txt",
+            "414.txt",
+            "421.txt",
+            "460.txt",
+            "474.txt",
+            "483.txt",
+            "486.txt",
+            "500.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "past",
+            "previous",
+            "forthcoming",
+            "coming"
+        ],
+        "file": [
+            "014.txt",
+            "025.txt",
+            "064.txt",
+            "072.txt",
+            "093.txt",
+            "099.txt",
+            "101.txt",
+            "105.txt",
+            "107.txt",
+            "108.txt",
+            "112.txt",
+            "121.txt",
+            "146.txt",
+            "152.txt",
+            "158.txt",
+            "176.txt",
+            "216.txt",
+            "240.txt",
+            "251.txt",
+            "263.txt",
+            "268.txt",
+            "278.txt",
+            "311.txt",
+            "312.txt",
+            "336.txt",
+            "383.txt",
+            "395.txt",
+            "416.txt",
+            "423.txt",
+            "435.txt",
+            "437.txt",
+            "445.txt",
+            "449.txt",
+            "452.txt",
+            "487.txt",
+            "495.txt",
+            "497.txt"
+        ]
+    },
+    {
+        "keywords": [
             "previous",
             "past",
             "forthcoming",
@@ -366,7 +373,22 @@
     {
         "keywords": [
             "coming",
+            "previous",
             "past",
+            "forthcoming"
+        ],
+        "file": [
+            "003.txt",
+            "126.txt",
+            "338.txt",
+            "361.txt",
+            "409.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "past",
+            "coming",
             "previous",
             "forthcoming"
         ],
@@ -396,36 +418,14 @@
     },
     {
         "keywords": [
-            "forthcoming",
-            "previous",
-            "past",
-            "coming"
-        ],
-        "file": [
-            "307.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "previous",
-            "coming",
-            "past",
-            "forthcoming"
-        ],
-        "file": [
-            "124.txt",
-            "281.txt"
-        ]
-    },
-    {
-        "keywords": [
             "past",
             "previous",
             "forthcoming",
             "coming"
         ],
         "file": [
-            "104.txt"
+            "109.txt",
+            "403.txt"
         ]
     },
     {

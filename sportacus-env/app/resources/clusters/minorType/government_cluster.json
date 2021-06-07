@@ -1,29 +1,28 @@
 [
     {
         "keywords": [
-            "parliament",
+            "government",
             "unicef",
             "police",
-            "government",
+            "parliament",
             "csa",
             "army"
         ],
         "file": [
-            "080.txt"
+            "043.txt"
         ]
     },
     {
         "keywords": [
-            "unicef",
             "police",
+            "unicef",
             "parliament",
             "government",
             "csa",
             "army"
         ],
         "file": [
-            "275.txt",
-            "451.txt"
+            "197.txt"
         ]
     },
     {
@@ -42,15 +41,16 @@
     },
     {
         "keywords": [
-            "police",
             "unicef",
+            "police",
             "parliament",
             "government",
             "csa",
             "army"
         ],
         "file": [
-            "197.txt"
+            "275.txt",
+            "451.txt"
         ]
     },
     {
@@ -68,15 +68,15 @@
     },
     {
         "keywords": [
-            "government",
+            "parliament",
             "unicef",
             "police",
-            "parliament",
+            "government",
             "csa",
             "army"
         ],
         "file": [
-            "043.txt"
+            "080.txt"
         ]
     }
 ]

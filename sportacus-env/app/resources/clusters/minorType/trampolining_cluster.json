@@ -1,33 +1,109 @@
 [
     {
         "keywords": [
-            "glenn",
-            "gabriel",
-            "page",
-            "andrade",
-            "bailey",
-            "wallace",
             "john",
+            "matthew",
+            "smith",
+            "bailey",
+            "glenn",
             "driscoll",
-            "blanchard",
-            "daly"
+            "lawrence",
+            "wallace",
+            "gabriel",
+            "adam"
         ],
         "file": [
+            "007.txt",
+            "024.txt",
+            "058.txt",
+            "062.txt",
+            "085.txt",
+            "087.txt",
+            "097.txt",
+            "104.txt",
+            "107.txt",
             "109.txt",
+            "119.txt",
+            "123.txt",
+            "124.txt",
             "129.txt",
+            "146.txt",
+            "147.txt",
+            "148.txt",
+            "153.txt",
+            "162.txt",
+            "179.txt",
             "181.txt",
             "182.txt",
+            "193.txt",
+            "197.txt",
             "223.txt",
             "226.txt",
             "232.txt",
+            "246.txt",
+            "259.txt",
+            "267.txt",
+            "268.txt",
+            "278.txt",
+            "280.txt",
+            "282.txt",
+            "285.txt",
             "293.txt",
-            "449.txt"
+            "294.txt",
+            "300.txt",
+            "305.txt",
+            "311.txt",
+            "322.txt",
+            "325.txt",
+            "333.txt",
+            "337.txt",
+            "349.txt",
+            "350.txt",
+            "364.txt",
+            "374.txt",
+            "389.txt",
+            "400.txt",
+            "403.txt",
+            "407.txt",
+            "449.txt",
+            "464.txt",
+            "493.txt",
+            "494.txt"
         ]
     },
     {
         "keywords": [
-            "martin",
-            "matthew",
+            "driscoll",
+            "smith",
+            "john",
+            "wallace",
+            "wright",
+            "andrade",
+            "bailey",
+            "blanchard",
+            "daly",
+            "dan"
+        ],
+        "file": [
+            "290.txt",
+            "301.txt",
+            "303.txt",
+            "308.txt",
+            "323.txt",
+            "328.txt",
+            "329.txt",
+            "339.txt",
+            "377.txt",
+            "378.txt",
+            "379.txt",
+            "417.txt",
+            "418.txt",
+            "419.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "smith",
             "wright",
             "gabriel",
             "andrade",
@@ -35,7 +111,44 @@
             "blanchard",
             "daly",
             "dan",
-            "driscoll"
+            "driscoll",
+            "glenn"
+        ],
+        "file": [
+            "128.txt",
+            "208.txt",
+            "212.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "wright",
+            "wallace",
+            "andrade",
+            "bailey",
+            "blanchard",
+            "daly",
+            "dan",
+            "driscoll",
+            "gabriel",
+            "glenn"
+        ],
+        "file": [
+            "113.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "martin",
+            "lawrence",
+            "driscoll",
+            "smith",
+            "matthew",
+            "wright",
+            "andrade",
+            "bailey",
+            "blanchard",
+            "daly"
         ],
         "file": [
             "150.txt",
@@ -59,197 +172,39 @@
             "342.txt",
             "366.txt",
             "367.txt",
-            "391.txt",
-            "399.txt",
-            "406.txt",
-            "429.txt",
-            "482.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "john",
-            "daly",
-            "wallace",
-            "wright",
-            "gabriel",
-            "andrade",
-            "bailey",
-            "blanchard",
-            "dan",
-            "driscoll"
-        ],
-        "file": [
-            "062.txt",
-            "097.txt",
-            "104.txt",
-            "115.txt",
-            "124.txt",
-            "146.txt",
-            "147.txt",
-            "179.txt",
-            "193.txt",
-            "246.txt",
-            "267.txt",
-            "280.txt",
-            "282.txt",
-            "294.txt",
-            "305.txt",
-            "325.txt",
-            "349.txt",
-            "350.txt",
-            "359.txt",
-            "371.txt",
-            "374.txt",
-            "464.txt",
-            "493.txt",
-            "494.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "driscoll",
-            "john",
-            "smith",
-            "martin",
-            "dan",
-            "wallace",
-            "wright",
-            "andrade",
-            "bailey",
-            "blanchard"
-        ],
-        "file": [
-            "290.txt",
-            "301.txt",
-            "302.txt",
-            "303.txt",
-            "308.txt",
-            "311.txt",
-            "314.txt",
-            "323.txt",
-            "328.txt",
-            "329.txt",
-            "331.txt",
-            "339.txt",
-            "364.txt",
-            "377.txt",
-            "378.txt",
-            "379.txt",
-            "403.txt",
-            "404.txt",
-            "405.txt",
-            "417.txt",
-            "418.txt",
-            "419.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "smith",
-            "john",
-            "dan",
-            "martin",
-            "wright",
-            "driscoll",
-            "andrade",
-            "bailey",
-            "blanchard",
-            "daly"
-        ],
-        "file": [
-            "075.txt",
-            "096.txt",
-            "099.txt",
-            "119.txt",
-            "128.txt",
-            "208.txt",
-            "212.txt",
-            "225.txt",
-            "252.txt",
-            "255.txt",
-            "285.txt",
-            "295.txt",
-            "300.txt",
-            "322.txt",
-            "334.txt",
-            "353.txt",
-            "383.txt",
-            "407.txt",
-            "410.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "matthew",
-            "john",
-            "wright",
-            "gabriel",
-            "andrade",
-            "bailey",
-            "blanchard",
-            "daly",
-            "dan",
-            "driscoll"
-        ],
-        "file": [
-            "007.txt",
-            "024.txt",
-            "085.txt",
-            "123.txt",
-            "148.txt",
-            "197.txt",
-            "259.txt",
-            "268.txt",
-            "278.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "lawrence",
-            "martin",
-            "smith",
-            "john",
-            "wright",
-            "driscoll",
-            "andrade",
-            "bailey",
-            "blanchard",
-            "daly"
-        ],
-        "file": [
-            "333.txt",
             "368.txt",
             "373.txt",
             "375.txt",
             "376.txt",
             "385.txt",
             "387.txt",
-            "389.txt",
-            "400.txt",
-            "415.txt"
+            "391.txt",
+            "399.txt",
+            "404.txt",
+            "406.txt",
+            "415.txt",
+            "429.txt",
+            "482.txt"
         ]
     },
     {
         "keywords": [
-            "wright",
-            "gabriel",
-            "john",
+            "driscoll",
             "smith",
+            "martin",
+            "john",
+            "wright",
             "andrade",
             "bailey",
             "blanchard",
             "daly",
-            "dan",
-            "driscoll"
+            "dan"
         ],
         "file": [
-            "095.txt",
-            "101.txt",
-            "113.txt",
-            "139.txt",
-            "153.txt",
-            "254.txt"
+            "302.txt",
+            "314.txt",
+            "331.txt",
+            "405.txt"
         ]
     },
     {
@@ -267,29 +222,74 @@
         ],
         "file": [
             "008.txt",
-            "058.txt",
-            "087.txt",
-            "162.txt",
-            "337.txt",
             "347.txt",
             "384.txt"
         ]
     },
     {
         "keywords": [
-            "blanchard",
+            "smith",
             "wright",
-            "wallace",
+            "gabriel",
+            "martin",
+            "dan",
             "andrade",
             "bailey",
+            "blanchard",
+            "daly",
+            "driscoll"
+        ],
+        "file": [
+            "075.txt",
+            "095.txt",
+            "096.txt",
+            "099.txt",
+            "225.txt",
+            "252.txt",
+            "255.txt",
+            "295.txt",
+            "334.txt",
+            "353.txt",
+            "383.txt",
+            "410.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "john",
+            "wright",
+            "gabriel",
+            "andrade",
+            "bailey",
+            "blanchard",
             "daly",
             "dan",
             "driscoll",
-            "gabriel",
             "glenn"
         ],
         "file": [
-            "107.txt"
+            "115.txt",
+            "359.txt",
+            "371.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "wright",
+            "john",
+            "gabriel",
+            "andrade",
+            "bailey",
+            "blanchard",
+            "daly",
+            "dan",
+            "driscoll",
+            "glenn"
+        ],
+        "file": [
+            "101.txt",
+            "139.txt",
+            "254.txt"
         ]
     }
 ]

@@ -10,9 +10,19 @@
             "072.txt",
             "172.txt",
             "183.txt",
-            "210.txt",
             "447.txt",
             "466.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "city",
+            "village",
+            "state",
+            "province"
+        ],
+        "file": [
+            "210.txt"
         ]
     },
     {

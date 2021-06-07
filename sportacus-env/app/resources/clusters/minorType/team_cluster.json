@@ -13,18 +13,6 @@
     },
     {
         "keywords": [
-            "cubs",
-            "chicago",
-            "libertadores",
-            "lakers",
-            "copa"
-        ],
-        "file": [
-            "241.txt"
-        ]
-    },
-    {
-        "keywords": [
             "libertadores",
             "copa",
             "lakers",
@@ -33,6 +21,18 @@
         ],
         "file": [
             "210.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "cubs",
+            "chicago",
+            "libertadores",
+            "lakers",
+            "copa"
+        ],
+        "file": [
+            "241.txt"
         ]
     }
 ]

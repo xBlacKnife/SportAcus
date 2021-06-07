@@ -1,12 +1,13 @@
 [
     {
         "keywords": [
+            "fax",
             "telephone",
-            "phone",
-            "fax"
+            "phone"
         ],
         "file": [
-            "245.txt"
+            "131.txt",
+            "273.txt"
         ]
     },
     {
@@ -23,13 +24,12 @@
     },
     {
         "keywords": [
-            "fax",
             "telephone",
-            "phone"
+            "phone",
+            "fax"
         ],
         "file": [
-            "131.txt",
-            "273.txt"
+            "245.txt"
         ]
     }
 ]

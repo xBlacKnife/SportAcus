@@ -2,7 +2,10 @@ import yake
 import json
 from os import walk
 
+from addNew import set_new_file
+
 DIRNAME = "../resources/annieApp/application-resources/bbc-sport/"
+GATEEXEPATH = 'D:/Programs/GateJava'
 
 # El primer elemento que hemos introducido nosotros es el "512.txt"
 def saveNew(new_to_save):
@@ -30,7 +33,7 @@ def saveNew(new_to_save):
     # Esto devuelve:
     #  - "1" si se ha podido añadir
     #  - "0" si no se ha podido añadir
-    # LEONOR -----> return SET_NEW_FILE(file_name)
+    return set_new_file(file_name, gate_path = GATEEXEPATH)
 
 # function "saveNew"
 
@@ -133,7 +136,7 @@ def getUserSearchNew(search):
     keywords = getKeywords(search, 0.9)
     
     # Se recoge el nombre del archivo que tiene nuestra noticia
-    # LEONOR -----> new_filename = DAME_EL_NOMBRE_DEL_ARCHIVO(keywords)
+    # LEONOR -----> new_filename = GET_FILE_NAME(keywords)
     new_filename = "001.txt"
     
     # Se crea el diccionario
@@ -176,8 +179,5 @@ def getRelatedNews(search):
     return json.dumps(news_list)
 
 # function "getRelatedNews"
-
-
-
 
     

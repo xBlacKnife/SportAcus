@@ -1,12 +1,13 @@
 from typing import ValuesView
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer 
 from sklearn.cluster import KMeans
-from sklearn.metrics import adjusted_rand_score
 from sklearn.externals import joblib
+import pickle
 import json
 
 tokensFilePath = "tokenDict.json"
 MODELS_PATH = '../resources/clusters/models/'
+WEIGHTS_PATH = '../resources/clusters/weights/'
 MAJOR_PATH = '../resources/clusters/majorType/'
 MINOR_PATH = '../resources/clusters/minorType/'
 
@@ -120,29 +121,30 @@ def generate_all_models():
     majorDocs, majorDocsFiles, minorDocs, minorDocsNames = generate_all_documents()
 
     for t in majorDocs:
-        vectorizer = TfidfVectorizer(stop_words='english')
+        vectorizer = CountVectorizer(decode_error="replace", stop_words='english')
+        # vectorizer = TfidfVectorizer(stop_words='english')
         # print(t)
         model, keys, labels = do_kmeans(majorDocs[t], vectorizer)
         numClusters = max(labels) + 1
         # print("Num Clusters: %s" % numClusters)
         save_clusters(t, numClusters, keys, labels, majorDocsFiles[t], MAJOR_PATH)
         joblib.dump(model, MODELS_PATH + t +'_model.pkl')
+        
+        pickle.dump(vectorizer.vocabulary_,open(WEIGHTS_PATH + t + "_feature.pkl","wb"))
         # print()
         
     for t in minorDocs:
-        vectorizer = TfidfVectorizer(stop_words='english')
+        vectorizer = CountVectorizer(decode_error="replace", stop_words='english')
+        # vectorizer = TfidfVectorizer(stop_words='english')
         model, keys, labels = do_kmeans(minorDocs[t], vectorizer)
         numClusters = max(labels) + 1
         save_clusters(t, numClusters, keys, labels, minorDocsNames[t], MINOR_PATH)
         joblib.dump(model, MODELS_PATH + t +'_model.pkl')
+        pickle.dump(vectorizer.vocabulary_,open(WEIGHTS_PATH + t + "_feature.pkl","wb"))
+        
 
-def generate_document_all_types_from_file (fileName):
-    
-    pass
-
-
-
-
+generate_all_models()
+ 
 # for i in docsToPred2:
 #     do_predictions(i, model)    
 # print(docs[0])

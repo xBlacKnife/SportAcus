@@ -7,55 +7,6 @@
             "dawn"
         ],
         "file": [
-            "003.txt",
-            "058.txt",
-            "066.txt",
-            "099.txt",
-            "104.txt",
-            "111.txt",
-            "123.txt",
-            "132.txt",
-            "163.txt",
-            "166.txt",
-            "177.txt",
-            "185.txt",
-            "200.txt",
-            "203.txt",
-            "212.txt",
-            "221.txt",
-            "253.txt",
-            "302.txt",
-            "314.txt",
-            "318.txt",
-            "332.txt",
-            "344.txt",
-            "349.txt",
-            "361.txt",
-            "374.txt",
-            "377.txt",
-            "382.txt",
-            "383.txt",
-            "395.txt",
-            "413.txt",
-            "420.txt",
-            "434.txt",
-            "449.txt",
-            "455.txt",
-            "460.txt",
-            "462.txt",
-            "476.txt",
-            "487.txt",
-            "503.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "seven",
-            "midnight",
-            "gmt",
-            "dawn"
-        ],
-        "file": [
             "001.txt",
             "002.txt",
             "004.txt",
@@ -432,6 +383,51 @@
     },
     {
         "keywords": [
+            "seven",
+            "midnight",
+            "gmt",
+            "dawn"
+        ],
+        "file": [
+            "066.txt",
+            "099.txt",
+            "104.txt",
+            "111.txt",
+            "123.txt",
+            "132.txt",
+            "163.txt",
+            "177.txt",
+            "185.txt",
+            "200.txt",
+            "203.txt",
+            "212.txt",
+            "221.txt",
+            "253.txt",
+            "302.txt",
+            "314.txt",
+            "318.txt",
+            "332.txt",
+            "344.txt",
+            "349.txt",
+            "374.txt",
+            "377.txt",
+            "382.txt",
+            "383.txt",
+            "395.txt",
+            "413.txt",
+            "420.txt",
+            "434.txt",
+            "449.txt",
+            "455.txt",
+            "460.txt",
+            "462.txt",
+            "476.txt",
+            "487.txt",
+            "503.txt"
+        ]
+    },
+    {
+        "keywords": [
             "gmt",
             "seven",
             "midnight",
@@ -442,7 +438,6 @@
             "112.txt",
             "121.txt",
             "142.txt",
-            "171.txt",
             "180.txt",
             "226.txt",
             "233.txt",
@@ -457,8 +452,21 @@
             "329.txt",
             "331.txt",
             "355.txt",
-            "370.txt",
             "378.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "seven",
+            "midnight",
+            "gmt",
+            "dawn"
+        ],
+        "file": [
+            "003.txt",
+            "058.txt",
+            "166.txt",
+            "361.txt"
         ]
     },
     {
@@ -476,6 +484,18 @@
     },
     {
         "keywords": [
+            "gmt",
+            "seven",
+            "midnight",
+            "dawn"
+        ],
+        "file": [
+            "171.txt",
+            "370.txt"
+        ]
+    },
+    {
+        "keywords": [
             "dawn",
             "seven",
             "midnight",
@@ -487,8 +507,8 @@
     },
     {
         "keywords": [
-            "gmt",
             "seven",
+            "gmt",
             "midnight",
             "dawn"
         ],

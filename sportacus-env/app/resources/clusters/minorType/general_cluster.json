@@ -5,54 +5,40 @@
             "teams"
         ],
         "file": [
-            "001.txt",
-            "003.txt",
-            "005.txt",
-            "006.txt",
-            "007.txt",
-            "009.txt",
-            "013.txt",
             "014.txt",
             "019.txt",
-            "022.txt",
-            "024.txt",
-            "030.txt",
-            "031.txt",
-            "032.txt",
-            "034.txt",
-            "038.txt",
-            "040.txt",
             "042.txt",
             "053.txt",
+            "058.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "race",
+            "teams"
+        ],
+        "file": [
+            "001.txt",
+            "005.txt",
+            "006.txt",
+            "013.txt",
+            "022.txt",
+            "024.txt",
+            "031.txt",
+            "032.txt",
             "055.txt",
             "057.txt",
-            "058.txt",
-            "059.txt",
-            "060.txt",
-            "063.txt",
-            "065.txt",
             "068.txt",
-            "069.txt",
-            "070.txt",
             "072.txt",
-            "074.txt",
-            "075.txt",
-            "076.txt",
-            "077.txt",
-            "078.txt",
             "080.txt",
             "083.txt",
             "085.txt",
             "086.txt",
-            "087.txt",
             "090.txt",
-            "093.txt",
             "101.txt",
             "130.txt",
-            "209.txt",
             "212.txt",
             "226.txt",
-            "272.txt",
             "293.txt",
             "385.txt",
             "387.txt",
@@ -73,7 +59,6 @@
             "132.txt",
             "133.txt",
             "159.txt",
-            "160.txt",
             "183.txt",
             "190.txt",
             "205.txt",
@@ -86,18 +71,80 @@
             "280.txt",
             "318.txt",
             "320.txt",
-            "331.txt",
             "335.txt",
             "339.txt",
-            "352.txt",
-            "362.txt",
             "364.txt",
-            "371.txt",
             "394.txt",
             "400.txt",
             "402.txt",
             "408.txt",
             "472.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "race",
+            "teams"
+        ],
+        "file": [
+            "065.txt",
+            "075.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "race",
+            "teams"
+        ],
+        "file": [
+            "009.txt",
+            "030.txt",
+            "060.txt",
+            "063.txt",
+            "074.txt",
+            "077.txt",
+            "093.txt",
+            "209.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "teams",
+            "race"
+        ],
+        "file": [
+            "160.txt",
+            "331.txt",
+            "352.txt",
+            "362.txt",
+            "371.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "race",
+            "teams"
+        ],
+        "file": [
+            "007.txt",
+            "040.txt",
+            "059.txt",
+            "069.txt",
+            "070.txt",
+            "087.txt",
+            "272.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "race",
+            "teams"
+        ],
+        "file": [
+            "003.txt",
+            "034.txt",
+            "076.txt",
+            "078.txt"
         ]
     },
     {
@@ -108,6 +155,15 @@
         "file": [
             "228.txt",
             "235.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "race",
+            "teams"
+        ],
+        "file": [
+            "038.txt"
         ]
     }
 ]

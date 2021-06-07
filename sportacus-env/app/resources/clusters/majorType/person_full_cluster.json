@@ -1,25 +1,8 @@
 [
     {
         "keywords": [
-            "carter",
             "williams",
-            "venus",
-            "thatcher",
-            "sharapova",
             "serena",
-            "ronaldinho",
-            "nixon",
-            "maria",
-            "david"
-        ],
-        "file": [
-            "325.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "serena",
-            "williams",
             "venus",
             "thatcher",
             "sharapova",
@@ -39,6 +22,23 @@
             "447.txt",
             "488.txt",
             "510.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "williams",
+            "venus",
+            "sharapova",
+            "serena",
+            "maria",
+            "thatcher",
+            "ronaldinho",
+            "nixon",
+            "david",
+            "carter"
+        ],
+        "file": [
+            "476.txt"
         ]
     },
     {
@@ -65,20 +65,19 @@
     },
     {
         "keywords": [
-            "sharapova",
-            "maria",
-            "serena",
+            "nixon",
             "williams",
             "venus",
             "thatcher",
+            "sharapova",
+            "serena",
             "ronaldinho",
-            "nixon",
+            "maria",
             "david",
             "carter"
         ],
         "file": [
-            "474.txt",
-            "495.txt"
+            "148.txt"
         ]
     },
     {
@@ -101,8 +100,26 @@
     },
     {
         "keywords": [
-            "venus",
+            "sharapova",
+            "maria",
             "williams",
+            "venus",
+            "thatcher",
+            "serena",
+            "ronaldinho",
+            "nixon",
+            "david",
+            "carter"
+        ],
+        "file": [
+            "467.txt",
+            "471.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "williams",
+            "venus",
             "thatcher",
             "sharapova",
             "serena",
@@ -138,54 +155,37 @@
     },
     {
         "keywords": [
-            "nixon",
             "williams",
-            "venus",
-            "thatcher",
             "sharapova",
             "serena",
-            "ronaldinho",
             "maria",
+            "venus",
+            "thatcher",
+            "ronaldinho",
+            "nixon",
             "david",
             "carter"
         ],
         "file": [
-            "148.txt"
+            "474.txt",
+            "495.txt"
         ]
     },
     {
         "keywords": [
-            "sharapova",
-            "maria",
+            "carter",
             "williams",
             "venus",
             "thatcher",
-            "serena",
-            "ronaldinho",
-            "nixon",
-            "david",
-            "carter"
-        ],
-        "file": [
-            "467.txt",
-            "471.txt"
-        ]
-    },
-    {
-        "keywords": [
-            "venus",
-            "williams",
             "sharapova",
-            "maria",
             "serena",
-            "thatcher",
             "ronaldinho",
             "nixon",
-            "david",
-            "carter"
+            "maria",
+            "david"
         ],
         "file": [
-            "476.txt"
+            "325.txt"
         ]
     }
 ]

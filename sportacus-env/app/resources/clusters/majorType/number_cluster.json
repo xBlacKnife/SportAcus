@@ -421,8 +421,6 @@
             "eighty"
         ],
         "file": [
-            "003.txt",
-            "058.txt",
             "066.txt",
             "099.txt",
             "101.txt",
@@ -431,7 +429,6 @@
             "123.txt",
             "132.txt",
             "163.txt",
-            "166.txt",
             "177.txt",
             "179.txt",
             "185.txt",
@@ -446,7 +443,6 @@
             "332.txt",
             "344.txt",
             "349.txt",
-            "361.txt",
             "374.txt",
             "377.txt",
             "382.txt",
@@ -477,20 +473,22 @@
             "201.txt",
             "257.txt",
             "258.txt",
-            "285.txt",
-            "423.txt"
+            "285.txt"
         ]
     },
     {
         "keywords": [
-            "million",
+            "seven",
             "zero",
             "thirty",
-            "seven",
+            "million",
             "eighty"
         ],
         "file": [
-            "097.txt"
+            "003.txt",
+            "058.txt",
+            "166.txt",
+            "361.txt"
         ]
     },
     {
@@ -515,6 +513,30 @@
         ],
         "file": [
             "251.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "zero",
+            "thirty",
+            "seven",
+            "million",
+            "eighty"
+        ],
+        "file": [
+            "423.txt"
+        ]
+    },
+    {
+        "keywords": [
+            "million",
+            "zero",
+            "thirty",
+            "seven",
+            "eighty"
+        ],
+        "file": [
+            "097.txt"
         ]
     }
 ]
