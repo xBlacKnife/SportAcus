@@ -25,6 +25,10 @@ CLUSTERS_PATH = '../resources/clusters/'
 # PATHS END ------------------
 
 def set_new_file(file_name, gate_path=None):
+    ''' Recibe un nombre de noticia generada y lo añade a los clusters correspondientes
+        Comunicacion con newManager.py
+        Return 1 si correcto, 0 si fallo
+    '''
     if gate_path:
         GATE_EXE_PATH = gate_path
     try:  
@@ -38,7 +42,8 @@ def set_new_file(file_name, gate_path=None):
 # function "set_new_file"
 
 def gate_process(file_name, newsText):
-        '''
+        ''' Recoge el archivo, lo procesa con GATE
+            Genera un archivo tokens con las distintas palabras de cada categoría
         '''
         tokensInFile = {}
         tokensInFile['majorType'] = {}
@@ -79,17 +84,22 @@ def gate_process(file_name, newsText):
         
         gw.close()  
 
-        cluster_label(file_name, tokensInFile)  
+        cluster_label(file_name, tokensInFile) # lo casifica en los clusters correspondientes
     
 # function "gate_process"
     
 def cluster_label(file_name, tokens):
+    '''clasifica en los clusters
+    '''
     update_clustering(file_name, tokens, 'majorType')
     update_clustering(file_name, tokens, 'minorType')
     
 # function "cluster_label"
 
 def get_all_types(tokensDict, mType):
+    ''' Crea una lista con todas las categorias 
+        con las que está relacionado el archivo
+    '''
     mTypesLst = []
     for f in tokensDict:
         for t in tokensDict[mType]:
@@ -115,6 +125,10 @@ def generate_documents_of_type(tokensDict, mType, mmType):
 # function "generate_documents_of_type"
 
 def load_relevant_cluster(mType, mmType):
+    ''' carga los clusters (modelo, cluster data y pesos TFIDF) 
+        de la categoría mType (major, minor) mmType
+    '''
+    
     model = pickle.load(MODELS_CL_DIR_PATH + mmType + '_model.pkl')
     with open(CLUSTERS_PATH + mType + '/' + mmType + '_cluster.json', 'r') as readClFile:
         cluster = json.load(readClFile)
@@ -126,6 +140,10 @@ def load_relevant_cluster(mType, mmType):
 # function "load_relevant_cluster"
 
 def predict_cluster_and_add(file_name, sentence, model, cluster, weights):
+    ''' Predice el conjunto al que pertenece el nuevo archivo 
+        devuelve la prediccion y el cluster modificado (con el nuevo archivo añadido)
+    '''
+    
     vectorizer = TfidfTransformer()
     Y = vectorizer.fit_transform(weights.fit_transform(sentence))
     prediction = model.predict(Y)[0]
@@ -142,6 +160,10 @@ def predict_cluster_and_add(file_name, sentence, model, cluster, weights):
 # function "predict_cluster_and_save"
 
 def update_clustering(file_name, tokens, token_type='majorType'):
+    ''' Por cada categoría, carga el cluster relevante, 
+        predice la posición del archivo nuevo, 
+        añade el nombre de archivo al cluster data y lo guarda
+    '''
     
     allTypes = get_all_types(tokens, token_type)
     for t in allTypes:

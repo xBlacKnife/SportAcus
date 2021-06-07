@@ -11,6 +11,7 @@ Archivo que contiene las funciones para generar los clusters partiendo de los ar
 Genera los clusters mediante algoritmo de Kmeans, 
 guardando lo necesario para predecir posiciones de nuevos archivos (modelo y pesos TFIDF)
 así como los archivos pertenecientes a cada cluster y sus palabras más representativas, separados por temática
+Solo es necesario lanzarlo una vez, dado que se guarda lo necesario para su reconstruccion
 '''
 # PATHS ----------------------
 TOKENS_FILE_NAME = "tokenDict.json"
@@ -21,6 +22,17 @@ MINOR_PATH = '../resources/clusters/minorType/'
 # PATHS END ------------------
 
 def do_kmeans(documents, vectorizer, numClusters = 10, numKeywords = 30):
+    ''' realiza el algoritmo de Kmeans para los documentos en docs
+        En este caso, las palabras relevantes a la categoria concatenadas
+        
+        Ej:
+            Frase = Nadal played yesterday's match perfectly
+            Palabras de tenis = ['Nadal', 'match', 'played']
+            doc = Nadal match played
+            
+        para cada categoria detectada
+    '''
+    
     print('Docs Len: %s' % len(documents))
     X = vectorizer.fit_transform(documents)   
     
@@ -46,6 +58,9 @@ def do_kmeans(documents, vectorizer, numClusters = 10, numKeywords = 30):
     return model, keywordsClusters, model.labels_
 
 def do_predictions(document, model):
+    ''' Predice el cluster al que pertenece un nuevo documento
+    '''
+    
     vectorizer = TfidfVectorizer(stop_words='english')
     Y = vectorizer.transform([document])
     prediction = model.predict(Y)
@@ -55,6 +70,10 @@ def do_predictions(document, model):
     return prediction
 
 def get_all_types(tokensDict, mType):
+    ''' Genera una lista con todas las categorias a las que pertenece 
+        el archivo X tras haber sido procesado por GATE 
+    '''
+    
     mTypesLst = []
     for f in tokensDict:
         for t in tokensDict[f][mType]:
@@ -66,6 +85,11 @@ def generate_documents_of_type(tokensDict, mType, mmType):
     ''' 
         Busca el tipo mmType de cada archivo y une todas las palabras de ese tipo en una única frase, 
         ya que serán tratados como documentos completos por separado
+        
+        Ej:
+            Frase = Nadal played yesterday's match perfectly
+            Palabras de tenis = ['Nadal', 'match', 'played']
+            docTennis = Nadal match played
     '''
     docs = []
     docsNames = []
@@ -80,7 +104,9 @@ def generate_documents_of_type(tokensDict, mType, mmType):
     return docs, docsNames
             
 def generate_all_documents():
-    
+    ''' Para todo el archivo 'TOKENS_FILE_NAME' (que contiene todo el procesado inicial con GATE)
+        genera los 'documentos' separados por categorias
+    '''
     mayorTypes = None
     minorTypes = None
     
@@ -107,6 +133,9 @@ def generate_all_documents():
     return mayorDocs, mayorDocsNames, minorDocs, minorDocsNames
 
 def save_clusters(mType, numClusters, keywords, labels, docNames, path):
+    ''' Recibe los datos de un cluster (keywords y archivos pertenecientes a cada cluster)
+        y los guarda como archivos
+    '''
     clusters = [None] * numClusters
     for i in range(len(labels)):
         if clusters[labels[i]] == None:
@@ -115,18 +144,14 @@ def save_clusters(mType, numClusters, keywords, labels, docNames, path):
             clusters[labels[i]]['file'] = []
             
         clusters[labels[i]]['file'].append(docNames[i])
-        
-    # print("CLUSTERS:")
-    # print(clusters)
-    # print()
-    # print("DOCS:")
-    # print(docNames)
-    # print()
 
     with open(path + mType + '_cluster.json', 'w') as wrFile:
         json.dump(clusters, wrFile, indent=4)
 
 def generate_all_models():
+    ''' Genera los modelos y clusters para todos los archivos procesados en TOKENS_FILE_NAME,
+        guardando lo necesario para la reconstruccion de los mismos
+    '''
     majorDocs, majorDocsFiles, minorDocs, minorDocsNames = generate_all_documents()
 
     for t in majorDocs:
@@ -153,8 +178,3 @@ def generate_all_models():
         
 
 generate_all_models()
- 
-# for i in docsToPred2:
-#     do_predictions(i, model)    
-# print(docs[0])
-# print(docsN[0])

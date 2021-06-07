@@ -31,16 +31,18 @@ CLUSTERS_PATH = '../resources/clusters/'
 
 
 def get_file_name(keywords, gate_path = None, num_files = 1):
+    ''' Recibe una lista de palabras clave, 
+        tras procesarlo con gate y recoger las noticias relacionadas de los cluster, 
+        devuelve los X mejores
+    '''
     if gate_path:
         GATE_EXE_PATH = gate_path
         
     keySet = process_wrds_gate(keywords)
-    # print(keySet)
     
     estractedFiles = []
     
     for wrd in keySet:
-        # print(wrd)
         for t in keySet[wrd]['majorType']:
             cluster = load_relevant_cluster('majorType', t)
             estractedFiles += find_related_files_in_cluster(cluster, wrd)
@@ -71,6 +73,8 @@ def get_file_name(keywords, gate_path = None, num_files = 1):
 # function "get_file_name"
 
 def process_wrds_gate(keywords):
+    ''' Procesa cada keyword con GATE y devuelve sus categorias
+    '''
     keySentence = ' '.join(word for word in keywords) # para pasarselo a gate como frase una vez solo en lugar de múltiples envíos
     keyCategories = {} # keeps categories of all words
     
@@ -121,12 +125,17 @@ def process_wrds_gate(keywords):
 # function "process_wrds_gate"
 
 def load_relevant_cluster(mType, mmType):
+    '''carga el cluster data relevante para mType mmType
+    '''
     with open(CLUSTERS_PATH + mType + '/' + mmType + '_cluster.json', 'r') as readClFile:
         cluster = json.load(readClFile)
     return cluster
 # function "load_relevant_cluster"
 
 def find_related_files_in_cluster(cluster, wrd):
+    '''Si encuentra la keyword en uno de los clusters de la categoria, devuelve esos archivos
+    '''
+    
     wrd = wrd.lower()
     for c in cluster:
         if wrd in c['keywords']:
@@ -135,6 +144,10 @@ def find_related_files_in_cluster(cluster, wrd):
 # function "find_related_files_in_cluster"
 
 def get_top_X_relevant_files(filesLst, num_files = 5):
+    ''' Se cuenta cuantas veces ha sido relevante un archivo, 
+        devolviendo los X mejores
+    '''
+    
     elemCount = Counter(filesLst)
     sortedDict = sorted(elemCount.items(), key = itemgetter(1), reverse = True)
     maxCount = dict(sortedDict[:min([len(sortedDict), num_files])])
