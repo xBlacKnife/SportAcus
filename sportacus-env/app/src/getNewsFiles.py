@@ -9,6 +9,14 @@ import json
 
 # IMPORTS END----------------
 
+''' Devuelve una cantidad num_files de noticias relacionadas con una serie de keywords. 
+
+Archivo que contiene las funciones para recuperar un numero X de noticias relacionadas con las palabras clave de búsqueda
+detecta las categorias de GATE de las palabras de búsqueda, 
+las localiza en las palabras clave de los clusterings a los que pertenece 
+y se contabiliza las veces que aparece el nombre de un archivo entre esos clusters, 
+asumiendo que cuantas más veces aparezca, más relevante resultará, devolviendo los X mejores
+'''
 # PATHS ----------------------
 FILES_DIR_PATH = '../resources/annieApp/application-resources/bbc-sport/'
 

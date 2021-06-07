@@ -1,29 +1,32 @@
 from gatenlp import Document
 from gatenlp.gateworker import GateWorker
 from gatenlp.gateworker import GateWorkerAnnotator
-from gatenlp.processing.executor import SerialCorpusExecutor
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 import glob
 import json
+# IMPORTS END----------------
+''' Genera el procesado inicial con GATE de los archivos iniciales. 
 
-tagLst = ['Date', 'Location', 'SpaceToken', 
-          'Token', 'Person', 'Sentence', 
-          'Split', 'Lookup', 'Unknown']
-
+Archivo que se encarga de procesar todas las noticias iniciales a través de GATE, 
+guardando en tokenDict un diccionario con las palabras de los archivos separadas por categoría de GATE
+'''
+# PATHS ----------------------
 tokenDict = {}
 
-path = "../resources/annieApp/application-resources/bbc-sport/"
-gateHomePath = "D:/Programs/GateJava" # hay que meter el path de la carpeta donde esta el exe de GATE
-# filename = "001.txt.xml"
+PATH = "../resources/annieApp/application-resources/bbc-sport/"
+GATE_EXE_PATH = 'D:/Programs/GateJava' # hay que meter el path de la carpeta donde esta el exe de GATE
+ANNIEAPP_PATH = '../resources/annieApp/application.xgapp' 
+# PATHS END ------------------
+
 
 stop_words = set(stopwords.words('english'))
     
-with GateWorker(start= True, gatehome=gateHomePath) as gw:
-    pipeline = GateWorkerAnnotator("../resources/annieApp/application.xgapp", gw)
+with GateWorker(start= True, gatehome=GATE_EXE_PATH) as gw:
+    pipeline = GateWorkerAnnotator(ANNIEAPP_PATH, gw)
     
-    for fileName in glob.glob(path + '*.txt'):
+    for fileName in glob.glob(PATH + '*.txt'):
         
         cleanFName = fileName.split('/')[-1].split('\\')[-1]
         tokenDict[cleanFName] = {}

@@ -4,11 +4,21 @@ from sklearn.cluster import KMeans
 import pickle
 import json
 
-tokensFilePath = "tokenDict.json"
+# IMPORTS END----------------
+''' Genera configuración de clusters inicial. 
+
+Archivo que contiene las funciones para generar los clusters partiendo de los archivos iniciales.
+Genera los clusters mediante algoritmo de Kmeans, 
+guardando lo necesario para predecir posiciones de nuevos archivos (modelo y pesos TFIDF)
+así como los archivos pertenecientes a cada cluster y sus palabras más representativas, separados por temática
+'''
+# PATHS ----------------------
+TOKENS_FILE_NAME = "tokenDict.json"
 MODELS_PATH = '../resources/clusters/models/'
 WEIGHTS_PATH = '../resources/clusters/weights/'
 MAJOR_PATH = '../resources/clusters/majorType/'
 MINOR_PATH = '../resources/clusters/minorType/'
+# PATHS END ------------------
 
 def do_kmeans(documents, vectorizer, numClusters = 10, numKeywords = 30):
     print('Docs Len: %s' % len(documents))
@@ -74,7 +84,7 @@ def generate_all_documents():
     mayorTypes = None
     minorTypes = None
     
-    with open(tokensFilePath, 'r') as fileRead:
+    with open(TOKENS_FILE_NAME, 'r') as fileRead:
         tokensDict = json.load(fileRead)
         
         # crea lista con todos los posibles tipos

@@ -6,9 +6,12 @@ from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 import json
 import pickle
-
 # IMPORTS END----------------
 
+''' Añade nueva noticia a la base de datos tras procesarla
+
+Archivo que contiene las funciones para clasificar y añadir a los clusters una nueva noticia.
+'''
 # PATHS ----------------------
 FILES_DIR_PATH = '../resources/annieApp/application-resources/bbc-sport/'
 
