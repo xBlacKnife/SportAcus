@@ -22,7 +22,7 @@ CLUSTERS_PATH = '../resources/clusters/'
 # PATHS END ------------------
 
 
-def get_file_name(keywords, gate_path = None, numFiles = 1):
+def get_file_name(keywords, gate_path = None, num_files = 1):
     if gate_path:
         GATE_EXE_PATH = gate_path
         
@@ -49,11 +49,11 @@ def get_file_name(keywords, gate_path = None, numFiles = 1):
         # for
     # for
     
-    topXFile = get_top_X_relevant_files(estractedFiles, numFiles = numFiles)
+    topXFile = get_top_X_relevant_files(estractedFiles, num_files = num_files)
     if (topXFile == 0):
         print("ERROR: No files found related to search: %s" % keywords)
     # if
-    if numFiles == 1:
+    if num_files == 1:
         return topXFile[0]
     # if
     else:
@@ -126,10 +126,10 @@ def find_related_files_in_cluster(cluster, wrd):
     return []
 # function "find_related_files_in_cluster"
 
-def get_top_X_relevant_files(filesLst, numFiles = 5):
+def get_top_X_relevant_files(filesLst, num_files = 5):
     elemCount = Counter(filesLst)
     sortedDict = sorted(elemCount.items(), key = itemgetter(1), reverse = True)
-    maxCount = dict(sortedDict[:min([len(sortedDict), numFiles])])
+    maxCount = dict(sortedDict[:min([len(sortedDict), num_files])])
     if len(maxCount) > 0:
         return list(maxCount.keys())
     else:

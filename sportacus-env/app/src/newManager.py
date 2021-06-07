@@ -137,7 +137,7 @@ def getUserSearchNew(search):
     keywords = getKeywords(search, 0.9)
     
     # Se recoge el nombre del archivo que tiene nuestra noticia
-    new_filename = get_file_name(keywords)
+    new_filename = get_file_name(keywords, gate_path = GATEEXEPATH)
     
     # Se crea el diccionario
     new_info = {
@@ -156,7 +156,7 @@ def getUserSearchNew(search):
 
 
 
-def getRelatedNews(search):
+def getRelatedNews(search, num_files = 7):
     ''' Recoge una lista de noticias relacionadas de la base de datos.
     '''
     news_list = []
@@ -168,8 +168,8 @@ def getRelatedNews(search):
     
     # Se recoge una lista de nombres de archivos donde se encuentran las noticias relacionadas
     # segun las keywors que teniamos.
-    # LEONOR -----> news_filename = DAME_LA_LISTA_DE_NOMBRES_DE_ARCHIVOS(keywords)
-    new_filenames = ["002.txt", "003.txt", "004.txt"]
+    new_filenames = get_file_name(keywords, gate_path = GATEEXEPATH, num_files = num_files)
+    print(new_filenames)
     
     # Por cada archivo, se almacena la noticia
     for file in new_filenames:
@@ -179,3 +179,5 @@ def getRelatedNews(search):
     return json.dumps(news_list)
 
 # function "getRelatedNews"
+
+print(getRelatedNews("Nadal tennis match at Wimbledon"))
